@@ -1,17 +1,17 @@
-## cljs.core/chunk-first
+## cljs.core/type->str
 
 
 
  <table border="1">
 <tr>
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1424"><img valign="middle" alt="[+] 0.0-1424" title="Added in 0.0-1424" src="https://img.shields.io/badge/+-0.0--1424-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1859"><img valign="middle" alt="[+] 0.0-1859" title="Added in 0.0-1859" src="https://img.shields.io/badge/+-0.0--1859-lightgrey.svg"></a> </td>
 </tr>
 </table>
 
 
  <samp>
-(__chunk-first__ s)<br>
+(__type->str__ ty)<br>
 </samp>
 
 ---
@@ -22,11 +22,13 @@
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2241-L2242):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L118-L121):
 
 ```clj
-(defn chunk-first [s]
-  (-chunked-first s))
+(defn type->str [ty]
+  (if-let [s (.-cljs$lang$ctorStr ty)]
+    s
+    (str ty)))
 ```
 
 <!--
@@ -37,7 +39,7 @@ clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2241-2242](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2241-L2242)</ins>
+            └── <ins>[core.cljs:118-121](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L118-L121)</ins>
 </pre>
 
 -->
@@ -48,7 +50,7 @@ clojurescript @ r1859
 
 ###### External doc links:
 
-[`cljs.core/chunk-first` @ crossclj](http://crossclj.info/fun/cljs.core.cljs/chunk-first.html)<br>
+[`cljs.core/type->str` @ crossclj](http://crossclj.info/fun/cljs.core.cljs/type-%3Estr.html)<br>
 
 ---
 
@@ -60,7 +62,7 @@ Created for the upcoming ClojureScript website.<br>
 [edit here] | [learn how]
 </td></tr></table>
 
-[edit here]:https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-first.cljsdoc
+[edit here]:https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_type-GTstr.cljsdoc
 [learn how]:https://github.com/cljsinfo/cljs-api-docs/wiki/cljsdoc-files
 
 <!--
@@ -77,18 +79,18 @@ The API data for this symbol:
 
 ```clj
 {:ns "cljs.core",
- :name "chunk-first",
+ :name "type->str",
  :type "function",
- :signature ["[s]"],
- :source {:code "(defn chunk-first [s]\n  (-chunked-first s))",
+ :signature ["[ty]"],
+ :source {:code "(defn type->str [ty]\n  (if-let [s (.-cljs$lang$ctorStr ty)]\n    s\n    (str ty)))",
           :title "Source code",
           :repo "clojurescript",
           :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2241 2242]},
- :full-name "cljs.core/chunk-first",
- :full-name-encode "cljs.core_chunk-first",
- :history [["+" "0.0-1424"]]}
+          :lines [118 121]},
+ :full-name "cljs.core/type->str",
+ :full-name-encode "cljs.core_type-GTstr",
+ :history [["+" "0.0-1859"]]}
 
 ```
 
@@ -99,7 +101,7 @@ Retrieve the API data for this symbol:
 (require '[clojure.edn :as edn])
 (-> (slurp "https://raw.githubusercontent.com/cljsinfo/cljs-api-docs/catalog/cljs-api.edn")
     (edn/read-string)
-    (get-in [:symbols "cljs.core/chunk-first"]))
+    (get-in [:symbols "cljs.core/type->str"]))
 ```
 
 -->
