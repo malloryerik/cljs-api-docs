@@ -539,6 +539,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.core/IIterable](refs/cljs.core_IIterable.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IIterable.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.core/IKVReduce](refs/cljs.core_IKVReduce.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IKVReduce.cljsdoc)</td>
 <td></td>
@@ -2165,6 +2172,13 @@ __Rows are removed when their columns are filled (done).__
 <tr>
 <td>[cljs.core/iter](refs/cljs.core_iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iter.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[cljs.core/iterable?](refs/cljs.core_iterableQMARK.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iterableQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
 <td></td>
