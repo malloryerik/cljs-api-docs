@@ -83,7 +83,7 @@ more efficient than, last. If the collection is empty, returns nil.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L1017-L1021):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L1017-L1021):
 
 ```clj
 (defn peek
@@ -95,11 +95,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1844/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1017-1021](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L1017-L1021)</ins>
+            └── <ins>[core.cljs:1017-1021](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L1017-L1021)</ins>
 </pre>
 
 -->
@@ -152,7 +152,7 @@ The API data for this symbol:
  :source {:code "(defn peek\n  [coll]\n  (-peek coll))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1017 1021]},
  :examples [{:id "4abc4c",

@@ -65,7 +65,7 @@ tcoll
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2388-L2389):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L2388-L2389):
 
 ```clj
 (defn assoc! [tcoll key val]
@@ -76,11 +76,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1844/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2388-2389](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2388-L2389)</ins>
+            └── <ins>[core.cljs:2388-2389](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L2388-L2389)</ins>
 </pre>
 
 -->
@@ -133,7 +133,7 @@ The API data for this symbol:
  :source {:code "(defn assoc! [tcoll key val]\n  (-assoc! tcoll key val))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2388 2389]},
  :examples [{:id "7d1e6b",
