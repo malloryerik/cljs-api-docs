@@ -45,7 +45,7 @@ n (default 1) (exclusive).
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L8615-L8619):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L8615-L8619):
 
 ```clj
 (defn rand
@@ -57,18 +57,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2498/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8615-8619](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L8615-L8619)</ins>
+            └── <ins>[core.cljs:8615-8619](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L8615-L8619)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L2026-L2029):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L2026-L2029):
 
 ```clj
 (defn ^number rand
@@ -80,11 +80,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2498/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2026-2029](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L2026-L2029)</ins>
+            └── <ins>[core.cljs:2026-2029](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L2026-L2029)</ins>
 </pre>
 -->
 
@@ -135,13 +135,13 @@ The API data for this symbol:
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8615 8619]},
  :extra-sources ({:code "(defn ^number rand\n  ([]  (Math/random))\n  ([n] (* n (rand))))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2498",
+                  :tag "r2505",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [2026 2029]}),
  :full-name "cljs.core/rand",
