@@ -44,7 +44,7 @@ Return a lazy sequence of all but the last n (default 1) items in coll
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L2873-L2876):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L2873-L2876):
 
 ```clj
 (defn drop-last
@@ -56,11 +56,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2873-2876](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L2873-L2876)</ins>
+            └── <ins>[core.cljs:2873-2876](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L2873-L2876)</ins>
 </pre>
 
 -->
@@ -113,7 +113,7 @@ The API data for this symbol:
  :source {:code "(defn drop-last\n  ([s] (drop-last 1 s))\n  ([n s] (map (fn [x _] x) s (drop n s))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2873 2876]},
  :full-name "cljs.core/drop-last",

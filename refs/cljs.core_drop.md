@@ -47,7 +47,7 @@ Returns a lazy sequence of all but the first n items in coll.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L2863-L2871):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L2863-L2871):
 
 ```clj
 (defn drop
@@ -64,11 +64,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2863-2871](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L2863-L2871)</ins>
+            └── <ins>[core.cljs:2863-2871](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L2863-L2871)</ins>
 </pre>
 
 -->
@@ -125,7 +125,7 @@ The API data for this symbol:
  :source {:code "(defn drop\n  [n coll]\n  (let [step (fn [n coll]\n               (let [s (seq coll)]\n                 (if (and (pos? n) s)\n                   (recur (dec n) (rest s))\n                   s)))]\n    (lazy-seq (step n coll))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2863 2871]},
  :full-name "cljs.core/drop",

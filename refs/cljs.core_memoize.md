@@ -40,7 +40,7 @@ higher performance at the expense of higher memory use.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L7199-L7211):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L7199-L7211):
 
 ```clj
 (defn memoize
@@ -58,11 +58,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2060/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7199-7211](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L7199-L7211)</ins>
+            └── <ins>[core.cljs:7199-7211](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L7199-L7211)</ins>
 </pre>
 
 -->
@@ -114,7 +114,7 @@ The API data for this symbol:
  :source {:code "(defn memoize\n  [f]\n  (let [mem (atom {})]\n    (fn [& args]\n      (if-let [v (get @mem args)]\n        v\n        (let [ret (apply f args)]\n          (swap! mem assoc args ret)\n          ret)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7199 7211]},
  :full-name "cljs.core/memoize",
