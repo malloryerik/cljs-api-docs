@@ -39,7 +39,7 @@ Return true if x satisfies IMap
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L903-L908):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L903-L908):
 
 ```clj
 (defn ^boolean map?
@@ -53,11 +53,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1443/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:903-908](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L903-L908)</ins>
+            └── <ins>[core.cljs:903-908](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L903-L908)</ins>
 </pre>
 
 -->
@@ -111,7 +111,7 @@ The API data for this symbol:
  :source {:code "(defn ^boolean map?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? IMap x)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [903 908]},
  :full-name "cljs.core/map?",
