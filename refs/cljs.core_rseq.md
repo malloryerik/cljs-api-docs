@@ -37,10 +37,10 @@ Returns nil if `coll` is empty.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L1928-L1929):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L1934-L1935):
 
 ```clj
-(defn rseq [coll]
+(defn ^seq rseq [coll]
   (-rseq coll))
 ```
 
@@ -48,11 +48,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1934/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1928-1929](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L1928-L1929)</ins>
+            └── <ins>[core.cljs:1934-1935](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L1934-L1935)</ins>
 </pre>
 
 -->
@@ -95,6 +95,7 @@ The API data for this symbol:
 
 ```clj
 {:description "Returns a sequence of the items in `coll` in reverse order in constant time.\n\nReturns nil if `coll` is empty.\n\n`coll` must be a vector or a sorted-map.",
+ :return-type seq,
  :ns "cljs.core",
  :name "rseq",
  :signature ["[coll]"],
@@ -102,12 +103,12 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/reverse"],
  :full-name-encode "cljs.core_rseq",
- :source {:code "(defn rseq [coll]\n  (-rseq coll))",
+ :source {:code "(defn ^seq rseq [coll]\n  (-rseq coll))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1928 1929]},
+          :lines [1934 1935]},
  :full-name "cljs.core/rseq",
  :clj-symbol "clojure.core/rseq"}
 
