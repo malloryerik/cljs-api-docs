@@ -28,7 +28,7 @@ Returns true if `x` is a string, false otherwise.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L665-L668):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L665-L668):
 
 ```clj
 (defn string? [x]
@@ -41,11 +41,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:665-668](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L665-L668)</ins>
+            └── <ins>[core.cljs:665-668](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L665-L668)</ins>
 </pre>
 
 -->
@@ -97,7 +97,7 @@ The API data for this symbol:
  :source {:code "(defn string? [x]\n  (and (goog/isString x)\n       (not (or (= (.charAt x 0) \\uFDD0)\n                (= (.charAt x 0) \\uFDD1)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [665 668]},
  :full-name "cljs.core/string?",

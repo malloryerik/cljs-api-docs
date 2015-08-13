@@ -39,7 +39,7 @@ Gets the validator-fn for a var/ref/agent/atom.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L3305-L3308):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L3330-L3333):
 
 ```clj
 (defn get-validator
@@ -51,11 +51,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3305-3308](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L3305-L3308)</ins>
+            └── <ins>[core.cljs:3330-3333](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L3330-L3333)</ins>
 </pre>
 
 -->
@@ -108,9 +108,9 @@ The API data for this symbol:
  :source {:code "(defn get-validator\n  [iref]\n  (.-validator iref))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3305 3308]},
+          :lines [3330 3333]},
  :full-name "cljs.core/get-validator",
  :clj-symbol "clojure.core/get-validator",
  :docstring "Gets the validator-fn for a var/ref/agent/atom."}

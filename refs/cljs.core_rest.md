@@ -61,7 +61,7 @@ argument.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L419-L423):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L419-L423):
 
 ```clj
 (defn rest
@@ -73,11 +73,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:419-423](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L419-L423)</ins>
+            └── <ins>[core.cljs:419-423](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L419-L423)</ins>
 </pre>
 
 -->
@@ -133,7 +133,7 @@ The API data for this symbol:
  :source {:code "(defn rest\n  [coll]\n  (-rest (seq coll)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [419 423]},
  :examples [{:id "0869af",
