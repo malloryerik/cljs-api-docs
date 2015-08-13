@@ -37,7 +37,7 @@
 
 
 
-Parser code @ [github](https://github.com/clojure/clojurescript/blob/r1806/src/clj/cljs/analyzer.clj#L255-L260):
+Parser code @ [github](https://github.com/clojure/clojurescript/blob/r1820/src/clj/cljs/analyzer.clj#L255-L260):
 
 ```clj
 (defmethod parse 'throw
@@ -52,11 +52,11 @@ Parser code @ [github](https://github.com/clojure/clojurescript/blob/r1806/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1806
+clojurescript @ r1820
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:255-260](https://github.com/clojure/clojurescript/blob/r1806/src/clj/cljs/analyzer.clj#L255-L260)</ins>
+            └── <ins>[analyzer.clj:255-260](https://github.com/clojure/clojurescript/blob/r1820/src/clj/cljs/analyzer.clj#L255-L260)</ins>
 </pre>
 
 -->
@@ -108,7 +108,7 @@ The API data for this symbol:
  :source {:code "(defmethod parse 'throw\n  [op env [_ throw :as form] name]\n  (let [throw-expr (disallowing-recur (analyze (assoc env :context :expr) throw))]\n    {:env env :op :throw :form form\n     :throw throw-expr\n     :children [throw-expr]}))",
           :title "Parser code",
           :repo "clojurescript",
-          :tag "r1806",
+          :tag "r1820",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [255 260]},
  :full-name "special/throw",
