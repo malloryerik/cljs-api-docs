@@ -44,7 +44,7 @@ it if not already forced. See also - realized?.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.28/src/main/cljs/cljs/core.cljs#L1270-L1276):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/cljs/cljs/core.cljs#L1270-L1276):
 
 ```clj
 (defn deref
@@ -56,12 +56,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.28/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.28
+clojurescript @ r1.7.48
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1270-1276](https://github.com/clojure/clojurescript/blob/r1.7.28/src/main/cljs/cljs/core.cljs#L1270-L1276)</ins>
+                └── <ins>[core.cljs:1270-1276](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/cljs/cljs/core.cljs#L1270-L1276)</ins>
 </pre>
 
 -->
@@ -114,7 +114,7 @@ The API data for this symbol:
  :source {:code "(defn deref\n  [o]\n  (-deref o))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.28",
+          :tag "r1.7.48",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [1270 1276]},
  :full-name "cljs.core/deref",

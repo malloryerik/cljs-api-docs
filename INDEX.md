@@ -2,12 +2,12 @@
 
  <table border="1">
 <tr>
-<td>__1.7.28__ [all](HISTORY.md)</td>
-<td>2015-07-31</td>
+<td>__1.7.48__ [all](HISTORY.md)</td>
+<td>2015-08-05</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.7.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
-<kbd>Closure Lib 0.0-20150505-021ed5b3</kbd>](http://www.closurecheatsheet.com/)</td>
+<kbd>Closure Lib 0.0-20150805-acd8b553</kbd>](http://www.closurecheatsheet.com/)</td>
 </tr>
 </table>
 
@@ -72,7 +72,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __1.7.28__ ([See Full History](HISTORY.md)):
+Changes from __1.7.48__ ([See Full History](HISTORY.md)):
 
 __Syntax Changes__
 
@@ -86,135 +86,45 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/ArrayNodeIterator](refs/cljs.core_ArrayNodeIterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/HashMapIter](refs/cljs.core_HashMapIter.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/HashSetIter](refs/cljs.core_HashSetIter.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/NodeIterator](refs/cljs.core_NodeIterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/PersistentQueueIter](refs/cljs.core_PersistentQueueIter.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/RecordIter](refs/cljs.core_RecordIter.md)</samp></td>
+<td><samp>[cljs.core/goog-define](refs/cljs.core_goog-define.md)</samp></td>
 </tr>
 <tr>
 <td>
 <img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
 </td>
-<td><samp>[~~cljs.js/analyze~~](refs/cljs.js_analyze.md)</samp></td>
+<td><samp>[~~cljs.js/atom?~~](refs/cljs.js_atomQMARK.md)</samp></td>
 </tr>
 <tr>
 <td>
 <img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
 </td>
-<td><samp>[~~cljs.js/analyze\*~~](refs/cljs.js_analyzeSTAR.md)</samp></td>
+<td><samp>[~~cljs.js/debug-prn~~](refs/cljs.js_debug-prn.md)</samp></td>
 </tr>
 <tr>
 <td>
 <img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
 </td>
-<td><samp>[~~cljs.js/analyze-deps~~](refs/cljs.js_analyze-deps.md)</samp></td>
+<td><samp>[~~cljs.js/valid-name?~~](refs/cljs.js_valid-nameQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.js/valid-opts?~~](refs/cljs.js_valid-optsQMARK.md)</samp></td>
 </tr>
 <tr>
 <td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.js/analyze-str](refs/cljs.js_analyze-str.md)</samp></td>
+<td><samp>[clojure.browser.repl/flush-print-queue!](refs/clojure.browser.repl_flush-print-queueBANG.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
 </td>
-<td><samp>[~~cljs.js/append-source-map~~](refs/cljs.js_append-source-map.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/compile~~](refs/cljs.js_compile.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/compile\*~~](refs/cljs.js_compileSTAR.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.js/compile-str](refs/cljs.js_compile-str.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/eval\*~~](refs/cljs.js_evalSTAR.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/eval-str\*~~](refs/cljs.js_eval-strSTAR.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/load-deps~~](refs/cljs.js_load-deps.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/load-macros~~](refs/cljs.js_load-macros.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/ns-side-effects~~](refs/cljs.js_ns-side-effects.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/prefix~~](refs/cljs.js_prefix.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/sm-data~~](refs/cljs.js_sm-data.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.js/wrap-error~~](refs/cljs.js_wrap-error.md)</samp></td>
+<td><samp>[clojure.browser.repl/print-queue](refs/clojure.browser.repl_print-queue.md)</samp></td>
 </tr>
 </table>
 
@@ -2088,6 +1998,12 @@ application.
 <td><samp>[get-validator](refs/cljs.core_get-validator.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" title="Added in 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[goog-define](refs/cljs.core_goog-define.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[+] 1.7.48" title="Added in 1.7.48" src="https://img.shields.io/badge/+-1.7.48-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/group-by)</td>
@@ -5113,9 +5029,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[atom?](refs/cljs.js_atomQMARK.md)</samp></td>
+<td><samp>[~~atom?~~](refs/cljs.js_atomQMARK.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[×] 1.7.48" title="Removed in 1.7.48" src="https://img.shields.io/badge/×-1.7.48-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -5137,9 +5053,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[debug-prn](refs/cljs.js_debug-prn.md)</samp></td>
+<td><samp>[~~debug-prn~~](refs/cljs.js_debug-prn.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[×] 1.7.48" title="Removed in 1.7.48" src="https://img.shields.io/badge/×-1.7.48-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -5245,15 +5161,15 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[valid-name?](refs/cljs.js_valid-nameQMARK.md)</samp></td>
+<td><samp>[~~valid-name?~~](refs/cljs.js_valid-nameQMARK.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[×] 1.7.48" title="Removed in 1.7.48" src="https://img.shields.io/badge/×-1.7.48-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
-<td><samp>[valid-opts?](refs/cljs.js_valid-optsQMARK.md)</samp></td>
+<td><samp>[~~valid-opts?~~](refs/cljs.js_valid-optsQMARK.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.10"><img valign="middle" alt="[+] 1.7.10" title="Added in 1.7.10" src="https://img.shields.io/badge/+-1.7.10-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[×] 1.7.48" title="Removed in 1.7.48" src="https://img.shields.io/badge/×-1.7.48-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -6481,6 +6397,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[flush-print-queue!](refs/clojure.browser.repl_flush-print-queueBANG.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[+] 1.7.48" title="Added in 1.7.48" src="https://img.shields.io/badge/+-1.7.48-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[get-ua-product](refs/clojure.browser.repl_get-ua-product.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3058"><img valign="middle" alt="[+] 0.0-3058" title="Added in 0.0-3058" src="https://img.shields.io/badge/+-0.0--3058-lightgrey.svg"></a> </td>
@@ -6496,6 +6418,12 @@ application.
 <td><samp>[order](refs/clojure.browser.repl_order.md)</samp></td>
 <td><samp>var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" title="Added in 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[print-queue](refs/clojure.browser.repl_print-queue.md)</samp></td>
+<td><samp>var</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/1.7.48"><img valign="middle" alt="[+] 1.7.48" title="Added in 1.7.48" src="https://img.shields.io/badge/+-1.7.48-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
