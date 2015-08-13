@@ -30,7 +30,7 @@ Reads one object from the string s
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L356-L360):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L393-L397):
 
 ```clj
 (defn read-string
@@ -43,45 +43,17 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:356-360](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L356-L360)</ins>
+            └── <ins>[reader.cljs:393-397](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L393-L397)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L232-L241):
-
-```clj
-(defn read-string
-  [reader _]
-  (loop [buffer (gstring/StringBuffer.)
-         ch (read-char reader)]
-    (cond
-     (nil? ch) (reader-error reader "EOF while reading string")
-     (identical? "\\" ch) (recur (do (.append buffer (escape-char buffer reader)) buffer)
-                        (read-char reader))
-     (identical? \" ch) (. buffer (toString))
-     :default (recur (do (.append buffer ch) buffer) (read-char reader)))))
-```
-
-<!--
-Repo - tag - source tree - lines:
-
- <pre>
-clojurescript @ r1211
-└── src
-    └── cljs
-        └── cljs
-            └── <ins>[reader.cljs:232-241](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L232-L241)</ins>
-</pre>
--->
-
----
 
 
 ###### External doc links:
@@ -126,15 +98,9 @@ The API data for this symbol:
  :source {:code "(defn read-string\n  [s]\n  (let [r (push-back-reader s)]\n    (read r true nil false)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [356 360]},
- :extra-sources ({:code "(defn read-string\n  [reader _]\n  (loop [buffer (gstring/StringBuffer.)\n         ch (read-char reader)]\n    (cond\n     (nil? ch) (reader-error reader \"EOF while reading string\")\n     (identical? \"\\\\\" ch) (recur (do (.append buffer (escape-char buffer reader)) buffer)\n                        (read-char reader))\n     (identical? \\\" ch) (. buffer (toString))\n     :default (recur (do (.append buffer ch) buffer) (read-char reader)))))",
-                  :title "Source code",
-                  :repo "clojurescript",
-                  :tag "r1211",
-                  :filename "src/cljs/cljs/reader.cljs",
-                  :lines [232 241]}),
+          :lines [393 397]},
  :full-name "cljs.reader/read-string",
  :clj-symbol "clojure.core/read-string",
  :docstring "Reads one object from the string s"}
