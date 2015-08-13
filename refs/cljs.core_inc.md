@@ -38,7 +38,7 @@ Returns a number one greater than num.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L1120-L1122):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L1120-L1122):
 
 ```clj
 (defn inc
@@ -49,18 +49,18 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r3123/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1120-1122](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L1120-L1122)</ins>
+            └── <ins>[core.cljs:1120-1122](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L1120-L1122)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/core.clj#L481-L482):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/core.clj#L481-L482):
 
 ```clj
 (defmacro ^::ana/numeric inc [x]
@@ -71,11 +71,11 @@ Macro code @ [github](https://github.com/clojure/clojurescript/blob/r3123/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:481-482](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/core.clj#L481-L482)</ins>
+            └── <ins>[core.clj:481-482](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/core.clj#L481-L482)</ins>
 </pre>
 -->
 
@@ -126,13 +126,13 @@ The API data for this symbol:
  :source {:code "(defn inc\n  [x] (cljs.core/+ x 1))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1120 1122]},
  :extra-sources [{:code "(defmacro ^::ana/numeric inc [x]\n  `(+ ~x 1))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r3123",
+                  :tag "r3126",
                   :filename "src/clj/cljs/core.clj",
                   :lines [481 482]}],
  :full-name "cljs.core/inc",
