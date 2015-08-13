@@ -38,7 +38,7 @@ Returns the value in the map entry.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L6942-L6945):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L6942-L6945):
 
 ```clj
 (defn val
@@ -50,11 +50,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6942-6945](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L6942-L6945)</ins>
+            └── <ins>[core.cljs:6942-6945](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L6942-L6945)</ins>
 </pre>
 
 -->
@@ -107,7 +107,7 @@ The API data for this symbol:
  :source {:code "(defn val\n  [map-entry]\n  (-val map-entry))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6942 6945]},
  :full-name "cljs.core/val",

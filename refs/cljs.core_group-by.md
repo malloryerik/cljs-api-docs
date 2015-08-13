@@ -45,7 +45,7 @@ corresponding elements, in the order they appeared in coll.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8320-L8330):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8320-L8330):
 
 ```clj
 (defn group-by
@@ -62,11 +62,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8320-8330](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8320-L8330)</ins>
+            └── <ins>[core.cljs:8320-8330](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8320-L8330)</ins>
 </pre>
 
 -->
@@ -119,7 +119,7 @@ The API data for this symbol:
  :source {:code "(defn group-by\n  [f coll]\n  (persistent!\n    (reduce\n      (fn [ret x]\n        (let [k (f x)]\n          (assoc! ret k (conj (get ret k []) x))))\n      (transient {}) coll)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8320 8330]},
  :full-name "cljs.core/group-by",

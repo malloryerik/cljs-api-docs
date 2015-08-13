@@ -44,7 +44,7 @@ the latter (left-to-right) will be the mapping in the result.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L6947-L6953):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L6947-L6953):
 
 ```clj
 (defn merge
@@ -57,11 +57,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2341/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6947-6953](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L6947-L6953)</ins>
+            └── <ins>[core.cljs:6947-6953](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L6947-L6953)</ins>
 </pre>
 
 -->
@@ -114,7 +114,7 @@ The API data for this symbol:
  :source {:code "(defn merge\n  [& maps]\n  (when (some identity maps)\n    (reduce #(conj (or %1 {}) %2) maps)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6947 6953]},
  :full-name "cljs.core/merge",
