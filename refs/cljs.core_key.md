@@ -38,7 +38,7 @@ Returns the key of the map entry.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L7551-L7554):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L7551-L7554):
 
 ```clj
 (defn key
@@ -50,11 +50,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3191/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7551-7554](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L7551-L7554)</ins>
+            └── <ins>[core.cljs:7551-7554](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L7551-L7554)</ins>
 </pre>
 
 -->
@@ -107,7 +107,7 @@ The API data for this symbol:
  :source {:code "(defn key\n  [map-entry]\n  (-key map-entry))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7551 7554]},
  :full-name "cljs.core/key",
