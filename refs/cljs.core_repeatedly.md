@@ -48,7 +48,7 @@ to it
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L3012-L3017):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L3012-L3017):
 
 ```clj
 (defn repeatedly
@@ -60,11 +60,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2202/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3012-3017](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L3012-L3017)</ins>
+            └── <ins>[core.cljs:3012-3017](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L3012-L3017)</ins>
 </pre>
 
 -->
@@ -121,7 +121,7 @@ The API data for this symbol:
  :source {:code "(defn repeatedly\n  ([f] (lazy-seq (cons (f) (repeatedly f))))\n  ([n f] (take n (repeatedly f))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3012 3017]},
  :full-name "cljs.core/repeatedly",
