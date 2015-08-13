@@ -88,14 +88,14 @@ Radix notation for using up to base 36.
 [``](syntax_NaN.md)<br>
 [`cljs.core/number?`](cljs.core_numberQMARK.md)<br>
 [`cljs.core/integer?`](cljs.core_integerQMARK.md)<br>
-[``](cljs.core_int.md)<br>
+[`cljs.core/int`](cljs.core_int.md)<br>
 
 ---
 
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -105,12 +105,12 @@ Radix notation for using up to base 36.
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 -->
@@ -156,7 +156,7 @@ The API data for this symbol:
            "cljs.core/int"],
  :full-name-encode "syntax_number",
  :source {:repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :examples [{:id "f96060",

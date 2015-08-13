@@ -63,12 +63,12 @@ therein.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L3953-L3964):
+Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L3957-L3968):
 
 ```clj
 (defmacro let
   [bindings & body]
-  (assert-args let
+  (assert-args
      (vector? bindings) "a vector for its binding"
      (even? (count bindings)) "an even number of forms in binding vector")
   `(let* ~(destructure bindings) ~@body))
@@ -78,18 +78,18 @@ Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:3953-3964](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L3953-L3964)</ins>
+            └── <ins>[core.clj:3957-3968](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L3957-L3968)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L32-L35):
+Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L32-L35):
 
 ```clj
 (def
@@ -102,11 +102,11 @@ Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:32-35](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L32-L35)</ins>
+            └── <ins>[core.clj:32-35](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L32-L35)</ins>
 </pre>
 -->
 
@@ -154,16 +154,16 @@ The API data for this symbol:
  :type "macro",
  :related ["cljs.core/letfn" "cljs.core/if-let"],
  :full-name-encode "cljs.core_let",
- :source {:code "(defmacro let\n  [bindings & body]\n  (assert-args let\n     (vector? bindings) \"a vector for its binding\"\n     (even? (count bindings)) \"an even number of forms in binding vector\")\n  `(let* ~(destructure bindings) ~@body))",
+ :source {:code "(defmacro let\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (even? (count bindings)) \"an even number of forms in binding vector\")\n  `(let* ~(destructure bindings) ~@body))",
           :title "Source code",
           :repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [3953 3964]},
+          :lines [3957 3968]},
  :extra-sources ({:code "(def\n  ^{:macro true\n    :added \"1.0\"}\n  let (fn* let [&form &env & decl] (cons 'let* decl)))",
                   :title "Source code",
                   :repo "clojure",
-                  :tag "clojure-1.3.0",
+                  :tag "clojure-1.4.0",
                   :filename "src/clj/clojure/core.clj",
                   :lines [32 35]}),
  :full-name "cljs.core/let",

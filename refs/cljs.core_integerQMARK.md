@@ -26,7 +26,7 @@ Returns true if `n` is an integer, false otherwise.
 
 ###### See Also:
 
-[``](cljs.core_int.md)<br>
+[`cljs.core/int`](cljs.core_int.md)<br>
 
 ---
 
@@ -38,10 +38,10 @@ Returns true if n is an integer.  Warning: returns true on underflow condition.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L684-L688):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L858-L862):
 
 ```clj
-(defn integer?
+(defn ^boolean integer?
   [n]
   (and (number? n)
        (js* "(~{n} == ~{n}.toFixed())")))
@@ -51,11 +51,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:684-688](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L684-L688)</ins>
+            └── <ins>[core.cljs:858-862](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L858-L862)</ins>
 </pre>
 
 -->
@@ -98,6 +98,7 @@ The API data for this symbol:
 
 ```clj
 {:description "Returns true if `n` is an integer, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "integer?",
  :signature ["[n]"],
@@ -105,12 +106,12 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/int"],
  :full-name-encode "cljs.core_integerQMARK",
- :source {:code "(defn integer?\n  [n]\n  (and (number? n)\n       (js* \"(~{n} == ~{n}.toFixed())\")))",
+ :source {:code "(defn ^boolean integer?\n  [n]\n  (and (number? n)\n       (js* \"(~{n} == ~{n}.toFixed())\")))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [684 688]},
+          :lines [858 862]},
  :full-name "cljs.core/integer?",
  :clj-symbol "clojure.core/integer?",
  :docstring "Returns true if n is an integer.  Warning: returns true on underflow condition."}

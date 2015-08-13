@@ -60,12 +60,12 @@ therein. Acts as a recur target.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L4025-L4048):
+Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L4029-L4052):
 
 ```clj
 (defmacro loop
   [bindings & body]
-    (assert-args loop
+    (assert-args
       (vector? bindings) "a vector for its binding"
       (even? (count bindings)) "an even number of forms in binding vector")
     (let [db (destructure bindings)]
@@ -89,18 +89,18 @@ Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4025-4048](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L4025-L4048)</ins>
+            └── <ins>[core.clj:4029-4052](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L4029-L4052)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L37-L40):
+Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L37-L40):
 
 ```clj
 (def
@@ -113,11 +113,11 @@ Source code @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:37-40](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L37-L40)</ins>
+            └── <ins>[core.clj:37-40](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L37-L40)</ins>
 </pre>
 -->
 
@@ -165,16 +165,16 @@ The API data for this symbol:
  :type "macro",
  :related ["special/recur"],
  :full-name-encode "cljs.core_loop",
- :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args loop\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (symbol? b) b (gensym))) bs)\n              bfs (reduce1 (fn [ret [b v g]]\n                            (if (symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
+ :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (symbol? b) b (gensym))) bs)\n              bfs (reduce1 (fn [ret [b v g]]\n                            (if (symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
           :title "Source code",
           :repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [4025 4048]},
+          :lines [4029 4052]},
  :extra-sources ({:code "(def\n ^{:macro true\n   :added \"1.0\"}\n loop (fn* loop [&form &env & decl] (cons 'loop* decl)))",
                   :title "Source code",
                   :repo "clojure",
-                  :tag "clojure-1.3.0",
+                  :tag "clojure-1.4.0",
                   :filename "src/clj/clojure/core.clj",
                   :lines [37 40]}),
  :examples [{:id "60291e",

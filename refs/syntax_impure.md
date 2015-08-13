@@ -25,7 +25,7 @@ Some impure functions which use this convention:
 
 - [`set!`](special_setBANG.md)
 - [`swap!`](cljs.core_swapBANG.md)
-- [cljs.core/conj!]
+- [`conj!`](cljs.core_conjBANG.md)
 - [cljs.core/specify!]
 
 ---

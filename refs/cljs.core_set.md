@@ -27,7 +27,7 @@ Returns a set of the distinct elements of `coll`.
 ###### See Also:
 
 [``](cljs.core_hash-set.md)<br>
-[``](cljs.core_sorted-set.md)<br>
+[`cljs.core/sorted-set`](cljs.core_sorted-set.md)<br>
 [`cljs.core/conj`](cljs.core_conj.md)<br>
 [`cljs.core/disj`](cljs.core_disj.md)<br>
 [`cljs.core/distinct`](cljs.core_distinct.md)<br>
@@ -52,27 +52,27 @@ Returns a set of the distinct elements of coll.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2710-L2717):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L5243-L5250):
 
 ```clj
 (defn set
   [coll]
   (loop [in (seq coll)
-         out cljs.core.Set/EMPTY]
-    (if-not (empty? in)
-      (recur (rest in) (conj out (first in)))
-      out)))
+         out (transient cljs.core.PersistentHashSet/EMPTY)]
+    (if (seq in)
+      (recur (next in) (conj! out (first in)))
+      (persistent! out))))
 ```
 
 <!--
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2710-2717](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2710-L2717)</ins>
+            └── <ins>[core.cljs:5243-5250](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L5243-L5250)</ins>
 </pre>
 
 -->
@@ -136,12 +136,12 @@ The API data for this symbol:
            "clojure.set/rename-keys"
            "clojure.set/map-invert"],
  :full-name-encode "cljs.core_set",
- :source {:code "(defn set\n  [coll]\n  (loop [in (seq coll)\n         out cljs.core.Set/EMPTY]\n    (if-not (empty? in)\n      (recur (rest in) (conj out (first in)))\n      out)))",
+ :source {:code "(defn set\n  [coll]\n  (loop [in (seq coll)\n         out (transient cljs.core.PersistentHashSet/EMPTY)]\n    (if (seq in)\n      (recur (next in) (conj! out (first in)))\n      (persistent! out))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2710 2717]},
+          :lines [5243 5250]},
  :full-name "cljs.core/set",
  :clj-symbol "clojure.core/set",
  :docstring "Returns a set of the distinct elements of coll."}

@@ -34,7 +34,7 @@ original forms:
 | [`{} map`](syntax_map.md)                       | [`#{} set`](syntax_set.md)                                     | lookup-related         |
 | [`' quote`](syntax_quote.md)                     | [`#' var`](syntax_var.md)                                     | quote-related          |
 | [`_ unused`](syntax_unused.md)                    | [`#_ ignore`](syntax_ignore.md)                                  | ignore-related         |
-| [`foo (symbol)`](syntax_symbol.md)    | [`#foo (tagged literal)`](syntax/tagged-literal) | name-related           |
+| [`foo (symbol)`](syntax_symbol.md)    | [`#foo (tagged literal)`](syntax_tagged-literal.md) | name-related           |
 | [`? predicate`](syntax_predicate.md)                 | [syntax/cond]                                    | conditional-related    |
 
 ---
@@ -114,7 +114,7 @@ Reader Conditional:
 [`#{} set`](syntax_set.md)<br>
 [`#' var`](syntax_var.md)<br>
 [`#_ ignore`](syntax_ignore.md)<br>
-[``](syntax_tagged-literal.md)<br>
+[`# tagged literal`](syntax_tagged-literal.md)<br>
 [``](syntax_cond.md)<br>
 
 ---
@@ -122,7 +122,7 @@ Reader Conditional:
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -132,12 +132,12 @@ Reader Conditional:
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 -->
@@ -185,7 +185,7 @@ The API data for this symbol:
            "syntax/cond"],
  :full-name-encode "syntax_dispatch",
  :source {:repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :usage ["#..."],

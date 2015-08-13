@@ -47,10 +47,10 @@ Same as (not (= obj1 obj2))
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1435-L1440):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1802-L1807):
 
 ```clj
-(defn not=
+(defn ^boolean not=
   ([x] false)
   ([x y] (not (= x y)))
   ([x y & more]
@@ -61,11 +61,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1011/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1435-1440](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1435-L1440)</ins>
+            └── <ins>[core.cljs:1802-1807](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1802-L1807)</ins>
 </pre>
 
 -->
@@ -108,6 +108,7 @@ The API data for this symbol:
 
 ```clj
 {:description "Returns the opposite of `=`.\n\nSame as `(not (= x y))`",
+ :return-type boolean,
  :ns "cljs.core",
  :name "not=",
  :signature ["[x]" "[x y]" "[x y & more]"],
@@ -115,12 +116,12 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/=" "cljs.core/not"],
  :full-name-encode "cljs.core_notEQ",
- :source {:code "(defn not=\n  ([x] false)\n  ([x y] (not (= x y)))\n  ([x y & more]\n   (not (apply = x y more))))",
+ :source {:code "(defn ^boolean not=\n  ([x] false)\n  ([x y] (not (= x y)))\n  ([x y & more]\n   (not (apply = x y more))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1435 1440]},
+          :lines [1802 1807]},
  :full-name "cljs.core/not=",
  :clj-symbol "clojure.core/not=",
  :docstring "Same as (not (= obj1 obj2))"}

@@ -44,16 +44,16 @@ Use any value as a key:
 ###### See Also:
 
 [`cljs.core/hash-map`](cljs.core_hash-map.md)<br>
-[``](cljs.core_array-map.md)<br>
-[``](cljs.core_sorted-map.md)<br>
-[``](cljs.core_sorted-map-by.md)<br>
+[`cljs.core/array-map`](cljs.core_array-map.md)<br>
+[`cljs.core/sorted-map`](cljs.core_sorted-map.md)<br>
+[`cljs.core/sorted-map-by`](cljs.core_sorted-map-by.md)<br>
 
 ---
 
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -63,12 +63,12 @@ Use any value as a key:
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 -->
@@ -113,7 +113,7 @@ The API data for this symbol:
            "cljs.core/sorted-map-by"],
  :full-name-encode "syntax_map",
  :source {:repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :usage ["{...}"],
