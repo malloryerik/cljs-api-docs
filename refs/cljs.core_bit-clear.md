@@ -57,7 +57,7 @@ Clear bit at index n
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1669-L1672):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1669-L1672):
 
 ```clj
 (defn bit-clear
@@ -69,33 +69,33 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1669-1672](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1669-L1672)</ins>
+            └── <ins>[core.cljs:1669-1672](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1669-L1672)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L490-L491):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L490-L491):
 
 ```clj
 (defmacro bit-clear [x n]
-  (list 'js* "(~{} & ~(1 << ~{}))" x n))
+  (core/list 'js* "(~{} & ~(1 << ~{}))" x n))
 ```
 
 <!--
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:490-491](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L490-L491)</ins>
+            └── <ins>[core.clj:490-491](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L490-L491)</ins>
 </pre>
 -->
 
@@ -146,13 +146,13 @@ The API data for this symbol:
  :source {:code "(defn bit-clear\n  [x n]\n  (cljs.core/bit-clear x n))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1669 1672]},
- :extra-sources [{:code "(defmacro bit-clear [x n]\n  (list 'js* \"(~{} & ~(1 << ~{}))\" x n))",
+ :extra-sources [{:code "(defmacro bit-clear [x n]\n  (core/list 'js* \"(~{} & ~(1 << ~{}))\" x n))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/clj/cljs/core.clj",
                   :lines [490 491]}],
  :examples [{:id "0f6748",

@@ -60,7 +60,7 @@ therein. Acts as a recur target.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L141-L163):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L141-L163):
 
 ```clj
 (defmacro loop
@@ -78,7 +78,7 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/c
                             (if (core/symbol? b)
                               (conj ret g v)
                               (conj ret g v b g)))
-                          [] (map vector bs vs gs))]
+                          [] (map core/vector bs vs gs))]
           `(let ~bfs
              (loop* ~(vec (interleave gs gs))
                (let ~(vec (interleave bs gs))
@@ -89,11 +89,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:141-163](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L141-L163)</ins>
+            └── <ins>[core.clj:141-163](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L141-L163)</ins>
 </pre>
 
 -->
@@ -143,10 +143,10 @@ The API data for this symbol:
  :type "macro",
  :related ["special/recur"],
  :full-name-encode "cljs.core_loop",
- :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (core/symbol? b) b (gensym))) bs)\n              bfs (reduce (fn [ret [b v g]]\n                            (if (core/symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
+ :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (core/symbol? b) b (gensym))) bs)\n              bfs (reduce (fn [ret [b v g]]\n                            (if (core/symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map core/vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/clj/cljs/core.clj",
           :lines [141 163]},
  :examples [{:id "60291e",

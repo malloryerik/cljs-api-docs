@@ -34,7 +34,7 @@ Creates a new list containing `items`.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1947-L1960):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1947-L1960):
 
 ```clj
 (defn list [& xs]
@@ -57,17 +57,39 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2014/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1947-1960](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1947-L1960)</ins>
+            └── <ins>[core.cljs:1947-1960](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1947-L1960)</ins>
 </pre>
 
 -->
 
 ---
 
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L1291-L1294):
+
+```clj
+(defmacro list
+  ([] ())
+  ([x & xs]
+    `(-conj (list ~@xs) ~x)))
+```
+
+<!--
+Repo - tag - source tree - lines:
+
+ <pre>
+clojurescript @ r2024
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:1291-1294](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L1291-L1294)</ins>
+</pre>
+-->
+
+---
 
 
 ###### External doc links:
@@ -112,11 +134,17 @@ The API data for this symbol:
  :related ["cljs.core/vector" "cljs.core/list?"],
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& xs]\n  (let [arr (if (instance? IndexedSeq xs)\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
-          :title "Source code",
+          :title "Function code",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1947 1960]},
+ :extra-sources [{:code "(defmacro list\n  ([] ())\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
+                  :title "Macro code",
+                  :repo "clojurescript",
+                  :tag "r2024",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [1291 1294]}],
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 
