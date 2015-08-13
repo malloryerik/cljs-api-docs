@@ -406,6 +406,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.core/ICloneable](refs/cljs.core_ICloneable.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ICloneable.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.core/ICollection](refs/cljs.core_ICollection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ICollection.cljsdoc)</td>
 <td></td>
@@ -1234,6 +1241,13 @@ __Rows are removed when their columns are filled (done).__
 <tr>
 <td>[cljs.core/chunked-seq?](refs/cljs.core_chunked-seqQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunked-seqQMARK.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[cljs.core/clone](refs/cljs.core_clone.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_clone.cljsdoc)</td>
 <td></td>
 <td></td>
 <td></td>
