@@ -41,7 +41,7 @@ remainder of dividing numerator by denominator.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1325-L1329):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L1351-L1355):
 
 ```clj
 (defn rem
@@ -54,11 +54,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1535/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1535
+clojurescript @ r1552
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1325-1329](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1325-L1329)</ins>
+            └── <ins>[core.cljs:1351-1355](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L1351-L1355)</ins>
 </pre>
 
 -->
@@ -111,9 +111,9 @@ The API data for this symbol:
  :source {:code "(defn rem\n  [n d]\n  (let [q (quot n d)]\n    (- n (* d q))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1535",
+          :tag "r1552",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1325 1329]},
+          :lines [1351 1355]},
  :full-name "cljs.core/rem",
  :clj-symbol "clojure.core/rem",
  :docstring "remainder of dividing numerator by denominator."}
