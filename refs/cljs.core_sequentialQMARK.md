@@ -41,7 +41,7 @@ Returns true if coll satisfies ISequential
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L1455-L1457):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L1455-L1457):
 
 ```clj
 (defn ^boolean sequential?
@@ -52,11 +52,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2655/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1455-1457](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L1455-L1457)</ins>
+            └── <ins>[core.cljs:1455-1457](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L1455-L1457)</ins>
 </pre>
 
 -->
@@ -110,7 +110,7 @@ The API data for this symbol:
  :source {:code "(defn ^boolean sequential?\n  [x] (satisfies? ISequential x))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1455 1457]},
  :full-name "cljs.core/sequential?",

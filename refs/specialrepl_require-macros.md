@@ -1,38 +1,41 @@
-## load-file (repl)
+## require-macros (repl)
 
 
 
  <table border="1">
 <tr>
 <td>special form (repl)</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" title="Added in 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
-<td>
-[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/load-file</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/load-file)
-</td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2657"><img valign="middle" alt="[+] 0.0-2657" title="Added in 0.0-2657" src="https://img.shields.io/badge/+-0.0--2657-lightgrey.svg"></a> </td>
 </tr>
 </table>
 
 
- <samp>
-(__load-file__ filename)<br>
-</samp>
-
----
 
 Only usable from a REPL.
 
-Load file at `filename`, then compiles and evaluates its code.
+This is a way for ClojureScript to load macros from Clojure files.
+The usage is similar to the `require` form.
+
+There is a nicer alternative if the Clojure macros file has the same name as a
+ClojureScript file in the same directory, which is a common pattern.  In this
+case, you can just use the `:include-macros` or `:refer-macros` flag of the
+`require` form.
 
 ---
 
 ###### Examples:
 
 ```clj
-(load-file "path/to/foo.cljs")
+(require-macros '[cljs.core.async.macros :refer [go]])
 ```
 
 ---
 
+###### See Also:
+
+[`require (repl)`](specialrepl_require.md)<br>
+
+---
 
 
 
@@ -118,13 +121,6 @@ clojurescript @ r2657
 
 
 
-###### External doc links:
-
-[`clojure.core/load-file` @ clojuredocs](http://clojuredocs.org/clojure.core/load-file)<br>
-[`clojure.core/load-file` @ grimoire](http://conj.io/store/v1/org.clojure/clojure/1.7.0-beta3/clj/clojure.core/load-file/)<br>
-[`clojure.core/load-file` @ crossclj](http://crossclj.info/fun/clojure.core/load-file.html)<br>
-
----
 
  <table>
 <tr><td>
@@ -134,7 +130,7 @@ Created for the upcoming ClojureScript website.<br>
 [edit here] | [learn how]
 </td></tr></table>
 
-[edit here]:https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/specialrepl_load-file.cljsdoc
+[edit here]:https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/specialrepl_require-macros.cljsdoc
 [learn how]:https://github.com/cljsinfo/cljs-api-docs/wiki/cljsdoc-files
 
 <!--
@@ -150,23 +146,22 @@ commented here since it is helpful to:
 The API data for this symbol:
 
 ```clj
-{:description "Only usable from a REPL.\n\nLoad file at `filename`, then compiles and evaluates its code.",
+{:description "Only usable from a REPL.\n\nThis is a way for ClojureScript to load macros from Clojure files.\nThe usage is similar to the `require` form.\n\nThere is a nicer alternative if the Clojure macros file has the same name as a\nClojureScript file in the same directory, which is a common pattern.  In this\ncase, you can just use the `:include-macros` or `:refer-macros` flag of the\n`require` form.",
  :ns "specialrepl",
- :name "load-file",
- :signature ["[filename]"],
- :history [["+" "0.0-927"]],
+ :name "require-macros",
+ :history [["+" "0.0-2657"]],
  :type "special form (repl)",
- :full-name-encode "specialrepl_load-file",
+ :related ["specialrepl/require"],
+ :full-name-encode "specialrepl_require-macros",
  :source {:code "(def default-special-fns\n  (let [load-file-fn\n        (fn self\n          ([repl-env env form]\n            (self repl-env env form nil))\n          ([repl-env env [_ file :as form] opts]\n            (load-file repl-env file opts)))]\n    {'in-ns\n     (fn self\n       ([repl-env env form]\n         (self repl-env env form nil))\n       ([repl-env env [_ [quote ns-name] :as form] _]\n         (when-not (ana/get-namespace ns-name)\n           (swap! env/*compiler* assoc-in [::ana/namespaces ns-name] {:name ns-name})\n           (-evaluate repl-env \"<cljs repl>\" 1\n             (str \"goog.provide('\" (comp/munge ns-name) \"');\")))\n         (set! ana/*cljs-ns* ns-name)))\n     'require\n     (fn self\n       ([repl-env env form]\n         (self repl-env env form nil))\n       ([repl-env env [_ & specs :as form] opts]\n         (evaluate-form repl-env env \"<cljs repl>\"\n           (with-meta\n             `(~'ns ~ana/*cljs-ns*\n                (:require\n                  ~@(map\n                      (fn [quoted-spec-or-kw]\n                        (if (keyword? quoted-spec-or-kw)\n                          quoted-spec-or-kw\n                          (second quoted-spec-or-kw)))\n                      specs)))\n             {:merge true :line 1 :column 1})\n           identity opts)))\n     'require-macros\n     (fn self\n       ([repl-env env form]\n         (self repl-env env form nil))\n       ([repl-env env [_ & specs :as form] opts]\n         (evaluate-form repl-env env \"<cljs repl>\"\n           (with-meta\n             `(~'ns ~ana/*cljs-ns*\n                (:require-macros\n                  ~@(map\n                      (fn [quoted-spec-or-kw]\n                        (if (keyword? quoted-spec-or-kw)\n                          quoted-spec-or-kw\n                          (second quoted-spec-or-kw)))\n                      specs)))\n             {:merge true :line 1 :column 1})\n           identity opts)))\n     'load-file load-file-fn\n     'clojure.core/load-file load-file-fn\n     'load-namespace\n     (fn self\n       ([repl-env env form]\n         (self env repl-env form nil))\n       ([repl-env env [_ ns :as form] opts]\n         (load-namespace repl-env ns opts)))}))",
           :title "repl specials table",
           :repo "clojurescript",
           :tag "r2657",
           :filename "src/clj/cljs/repl.clj",
           :lines [190 248]},
- :examples [{:id "0903c5",
-             :content "```clj\n(load-file \"path/to/foo.cljs\")\n```"}],
- :full-name "specialrepl/load-file",
- :clj-symbol "clojure.core/load-file"}
+ :examples [{:id "e34cf4",
+             :content "```clj\n(require-macros '[cljs.core.async.macros :refer [go]])\n```"}],
+ :full-name "specialrepl/require-macros"}
 
 ```
 
@@ -177,7 +172,7 @@ Retrieve the API data for this symbol:
 (require '[clojure.edn :as edn])
 (-> (slurp "https://raw.githubusercontent.com/cljsinfo/cljs-api-docs/catalog/cljs-api.edn")
     (edn/read-string)
-    (get-in [:symbols "specialrepl/load-file"]))
+    (get-in [:symbols "specialrepl/require-macros"]))
 ```
 
 -->
