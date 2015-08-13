@@ -42,7 +42,7 @@ Is set1 a superset of set2?
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/clojure/set.cljs#L138-L142):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/clojure/set.cljs#L138-L142):
 
 ```clj
 (defn superset? 
@@ -55,11 +55,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1895/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:138-142](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/clojure/set.cljs#L138-L142)</ins>
+            └── <ins>[set.cljs:138-142](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/clojure/set.cljs#L138-L142)</ins>
 </pre>
 
 -->
@@ -112,7 +112,7 @@ The API data for this symbol:
  :source {:code "(defn superset? \n  [set1 set2]\n  (and (>= (count set1) (count set2))\n       (every? #(contains? set1 %) set2)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/clojure/set.cljs",
           :lines [138 142]},
  :full-name "clojure.set/superset?",
