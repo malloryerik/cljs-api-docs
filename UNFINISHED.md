@@ -5551,6 +5551,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.repl.browser/mime-type->encoding](refs/cljs.repl.browser_mime-type-GTencoding.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_mime-type-GTencoding.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.repl.browser/ordering](refs/cljs.repl.browser_ordering.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_ordering.cljsdoc)</td>
 <td></td>
