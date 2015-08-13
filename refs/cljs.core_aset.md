@@ -72,7 +72,7 @@ Sets the value at the index.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L99-L102):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L99-L102):
 
 ```clj
 (defn aset
@@ -84,18 +84,18 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:99-102](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L99-L102)</ins>
+            └── <ins>[core.cljs:99-102](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L99-L102)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/core.clj#L218-L219):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L218-L219):
 
 ```clj
 (defmacro aset [a i v]
@@ -106,11 +106,11 @@ Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:218-219](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/core.clj#L218-L219)</ins>
+            └── <ins>[core.clj:218-219](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L218-L219)</ins>
 </pre>
 -->
 
@@ -161,13 +161,13 @@ The API data for this symbol:
  :source {:code "(defn aset\n  [array i val]\n  (cljs.core/aset array i val))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [99 102]},
  :extra-sources [{:code "(defmacro aset [a i v]\n  (list 'js* \"(~{}[~{}] = ~{})\" a i v))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r1449",
+                  :tag "r1450",
                   :filename "src/clj/cljs/core.clj",
                   :lines [218 219]}],
  :full-name "cljs.core/aset",

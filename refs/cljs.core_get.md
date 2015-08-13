@@ -43,7 +43,7 @@ Returns the value mapped to key, not-found or nil if key not present.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L769-L774):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L769-L774):
 
 ```clj
 (defn get
@@ -57,18 +57,18 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:769-774](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L769-L774)</ins>
+            └── <ins>[core.cljs:769-774](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L769-L774)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/core.clj#L358-L362):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L358-L362):
 
 ```clj
 (defmacro get
@@ -82,11 +82,11 @@ Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1449/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:358-362](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/core.clj#L358-L362)</ins>
+            └── <ins>[core.clj:358-362](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L358-L362)</ins>
 </pre>
 -->
 
@@ -137,13 +137,13 @@ The API data for this symbol:
  :source {:code "(defn get\n  ([o k]\n     (-lookup o k))\n  ([o k not-found]\n     (-lookup o k not-found)))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [769 774]},
  :extra-sources [{:code "(defmacro get\n  ([coll k]\n     `(-lookup ~coll ~k nil))\n  ([coll k not-found]\n     `(-lookup ~coll ~k ~not-found)))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r1449",
+                  :tag "r1450",
                   :filename "src/clj/cljs/core.clj",
                   :lines [358 362]}],
  :full-name "cljs.core/get",
