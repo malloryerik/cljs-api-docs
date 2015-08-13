@@ -45,7 +45,7 @@ Strings.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L404-L410):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L404-L410):
 
 ```clj
 (defn seq
@@ -58,11 +58,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:404-410](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L404-L410)</ins>
+            └── <ins>[core.cljs:404-410](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L404-L410)</ins>
 </pre>
 
 -->
@@ -115,7 +115,7 @@ The API data for this symbol:
  :source {:code "(defn seq\n  [coll]\n  (when coll\n    (-seq coll)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [404 410]},
  :full-name "cljs.core/seq",

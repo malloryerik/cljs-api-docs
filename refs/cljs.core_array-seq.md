@@ -39,7 +39,7 @@ Creates a `seq` from a JavaScript array, starting at index `i` if given.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L372-L373):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L372-L373):
 
 ```clj
 (defn array-seq [array i]
@@ -50,11 +50,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:372-373](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L372-L373)</ins>
+            └── <ins>[core.cljs:372-373](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L372-L373)</ins>
 </pre>
 
 -->
@@ -103,7 +103,7 @@ The API data for this symbol:
  :source {:code "(defn array-seq [array i]\n  (prim-seq array i))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [372 373]},
  :examples [{:id "9ef6de",
