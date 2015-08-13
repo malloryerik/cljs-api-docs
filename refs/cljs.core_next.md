@@ -60,7 +60,7 @@ argument.  If there are no more items, returns nil
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L516-L523):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L516-L523):
 
 ```clj
 (defn ^seq next
@@ -75,11 +75,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2134/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:516-523](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L516-L523)</ins>
+            └── <ins>[core.cljs:516-523](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L516-L523)</ins>
 </pre>
 
 -->
@@ -133,7 +133,7 @@ The API data for this symbol:
  :source {:code "(defn ^seq next\n  [coll]\n  (when-not (nil? coll)\n    (if (implements? INext coll)\n      (-next ^not-native coll)\n      (seq (rest coll)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [516 523]},
  :examples [{:id "7db59a",
