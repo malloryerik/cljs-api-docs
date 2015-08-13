@@ -5243,6 +5243,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.test/use-fixtures](refs/cljs.test_use-fixtures.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_use-fixtures.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[clojure.browser.dom/DOMBuilder](refs/clojure.browser.dom_DOMBuilder.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.dom_DOMBuilder.cljsdoc)</td>
 <td></td>

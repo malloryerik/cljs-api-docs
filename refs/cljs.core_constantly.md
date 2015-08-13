@@ -54,7 +54,7 @@ Returns a function that takes any number of arguments and returns x.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L3283-L3285):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L3283-L3285):
 
 ```clj
 (defn constantly
@@ -65,11 +65,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2496/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3283-3285](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L3283-L3285)</ins>
+            └── <ins>[core.cljs:3283-3285](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L3283-L3285)</ins>
 </pre>
 
 -->
@@ -122,7 +122,7 @@ The API data for this symbol:
  :source {:code "(defn constantly\n  [x] (fn [& args] x))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3283 3285]},
  :examples [{:id "9d5c25",
