@@ -49,51 +49,31 @@ Returns true if x is a JavaScript array.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L98-L101):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L153-L158):
 
 ```clj
 (defn ^boolean array?
   [x]
-  (cljs.core/array? x))
+  (if (identical? *target* "nodejs")
+    (.isArray js/Array x)
+    (instance? js/Array x)))
 ```
 
 <!--
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:98-101](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L98-L101)</ins>
+            └── <ins>[core.cljs:153-158](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L153-L158)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L304-L307):
-
-```clj
-(defmacro array? [x]
-  (if (= :nodejs (-> @env/*compiler* :options :target))
-    (bool-expr `(.isArray js/Array ~x))
-    (bool-expr (core/list 'js* "~{} instanceof Array" x))))
-```
-
-<!--
-Repo - tag - source tree - lines:
-
- <pre>
-clojurescript @ r3058
-└── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:304-307](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L304-L307)</ins>
-</pre>
--->
-
----
 
 
 ###### External doc links:
@@ -135,18 +115,12 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/object?"],
  :full-name-encode "cljs.core_arrayQMARK",
- :source {:code "(defn ^boolean array?\n  [x]\n  (cljs.core/array? x))",
-          :title "Function code",
+ :source {:code "(defn ^boolean array?\n  [x]\n  (if (identical? *target* \"nodejs\")\n    (.isArray js/Array x)\n    (instance? js/Array x)))",
+          :title "Source code",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [98 101]},
- :extra-sources [{:code "(defmacro array? [x]\n  (if (= :nodejs (-> @env/*compiler* :options :target))\n    (bool-expr `(.isArray js/Array ~x))\n    (bool-expr (core/list 'js* \"~{} instanceof Array\" x))))",
-                  :title "Macro code",
-                  :repo "clojurescript",
-                  :tag "r3058",
-                  :filename "src/clj/cljs/core.clj",
-                  :lines [304 307]}],
+          :lines [153 158]},
  :examples [{:id "39913c",
              :content "```clj\n(array? #js [1 2 3])\n;;=> true\n\n(array? [1 2 3])\n;;=> false\n\n(array? \"hi\")\n;;=> false\n```"}],
  :full-name "cljs.core/array?",
