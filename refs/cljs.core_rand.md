@@ -45,7 +45,7 @@ n (default 1) (exclusive).
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L7229-L7233):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L7229-L7233):
 
 ```clj
 (defn rand
@@ -57,18 +57,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7229-7233](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L7229-L7233)</ins>
+            └── <ins>[core.cljs:7229-7233](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L7229-L7233)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1673-L1676):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1673-L1676):
 
 ```clj
 (defn rand
@@ -80,11 +80,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2067/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1673-1676](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1673-L1676)</ins>
+            └── <ins>[core.cljs:1673-1676](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1673-L1676)</ins>
 </pre>
 -->
 
@@ -135,13 +135,13 @@ The API data for this symbol:
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7229 7233]},
  :extra-sources ({:code "(defn rand\n  ([]  (Math/random))\n  ([n] (* n (rand))))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2067",
+                  :tag "r2069",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [1673 1676]}),
  :full-name "cljs.core/rand",
