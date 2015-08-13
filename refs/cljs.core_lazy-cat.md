@@ -58,7 +58,7 @@ needed.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L1376-L1383):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1886/src/clj/cljs/core.clj#L1376-L1383):
 
 ```clj
 (defmacro lazy-cat
@@ -70,11 +70,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1885/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1376-1383](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L1376-L1383)</ins>
+            └── <ins>[core.clj:1376-1383](https://github.com/clojure/clojurescript/blob/r1886/src/clj/cljs/core.clj#L1376-L1383)</ins>
 </pre>
 
 -->
@@ -127,7 +127,7 @@ The API data for this symbol:
  :source {:code "(defmacro lazy-cat\n  [& colls]\n  `(concat ~@(map #(list `lazy-seq %) colls)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/clj/cljs/core.clj",
           :lines [1376 1383]},
  :full-name "cljs.core/lazy-cat",
