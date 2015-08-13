@@ -45,7 +45,7 @@ n (default 1) (exclusive).
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L8615-L8619):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L8602-L8606):
 
 ```clj
 (defn rand
@@ -57,38 +57,17 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8615-8619](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L8615-L8619)</ins>
+            └── <ins>[core.cljs:8602-8606](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L8602-L8606)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L2026-L2029):
-
-```clj
-(defn ^number rand
-  ([]  (Math/random))
-  ([n] (* n (rand))))
-```
-
-<!--
-Repo - tag - source tree - lines:
-
- <pre>
-clojurescript @ r2511
-└── src
-    └── cljs
-        └── cljs
-            └── <ins>[core.cljs:2026-2029](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L2026-L2029)</ins>
-</pre>
--->
-
----
 
 
 ###### External doc links:
@@ -135,15 +114,9 @@ The API data for this symbol:
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8615 8619]},
- :extra-sources ({:code "(defn ^number rand\n  ([]  (Math/random))\n  ([n] (* n (rand))))",
-                  :title "Source code",
-                  :repo "clojurescript",
-                  :tag "r2511",
-                  :filename "src/cljs/cljs/core.cljs",
-                  :lines [2026 2029]}),
+          :lines [8602 8606]},
  :full-name "cljs.core/rand",
  :clj-symbol "clojure.core/rand",
  :docstring "Returns a random floating point number between 0 (inclusive) and\nn (default 1) (exclusive)."}

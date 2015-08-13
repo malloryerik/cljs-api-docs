@@ -82,7 +82,7 @@ Note - not the same as next/butlast.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1407-L1413):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L1407-L1413):
 
 ```clj
 (defn pop
@@ -95,11 +95,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1407-1413](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1407-L1413)</ins>
+            └── <ins>[core.cljs:1407-1413](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L1407-L1413)</ins>
 </pre>
 
 -->
@@ -152,7 +152,7 @@ The API data for this symbol:
  :source {:code "(defn pop\n  [coll]\n  (when-not (nil? coll)\n    (-pop coll)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1407 1413]},
  :examples [{:id "6bd9f7",
