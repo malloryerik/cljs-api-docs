@@ -4851,6 +4851,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.repl/repl-special-doc-map](refs/cljs.repl_repl-special-doc-map.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-special-doc-map.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.repl/self-require?](refs/cljs.repl_self-requireQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_self-requireQMARK.cljsdoc)</td>
 <td></td>
@@ -6127,6 +6134,13 @@ __Rows are removed when their columns are filled (done).__
 <tr>
 <td>[clojure.browser.repl/evaluate-javascript](refs/clojure.browser.repl_evaluate-javascript.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.repl_evaluate-javascript.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[clojure.browser.repl/get-ua-product](refs/clojure.browser.repl_get-ua-product.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.repl_get-ua-product.cljsdoc)</td>
 <td></td>
 <td></td>
 <td></td>
