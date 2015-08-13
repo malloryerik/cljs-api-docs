@@ -70,7 +70,7 @@ Returns the namespace String of a symbol or keyword, or nil if not present.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L2533-L2538):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L2533-L2538):
 
 ```clj
 (defn namespace
@@ -84,11 +84,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2814/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2533-2538](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L2533-L2538)</ins>
+            └── <ins>[core.cljs:2533-2538](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L2533-L2538)</ins>
 </pre>
 
 -->
@@ -141,7 +141,7 @@ The API data for this symbol:
  :source {:code "(defn namespace\n  [x]\n  (if (implements? INamed x)\n    (-namespace ^not-native x)\n    (throw (js/Error. (str \"Doesn't support namespace: \" x)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2533 2538]},
  :examples [{:id "5bd3b4",
