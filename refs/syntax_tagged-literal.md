@@ -49,7 +49,7 @@ ClojureScript supports the following tagged literals:
 
 - [`#inst literal`](syntax_inst-literal.md)
 - [`#uuid literal`](syntax_uuid-literal.md)
-- [syntax/js-literal]
+- [`#js literal`](syntax_js-literal.md)
 - [`#queue literal`](syntax_queue-literal.md)
 
 ---

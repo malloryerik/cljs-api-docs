@@ -39,10 +39,10 @@ Coerce to int by stripping decimal places.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1622-L1625):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1620-L1623):
 
 ```clj
-(defn ^number int
+(defn int
   [x]
   (bit-or x 0))
 ```
@@ -51,18 +51,18 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r2080/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1622-1625](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1622-L1625)</ins>
+            └── <ins>[core.cljs:1620-1623](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1620-L1623)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2080/src/clj/cljs/core.clj#L481-L482):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/core.clj#L484-L485):
 
 ```clj
 (defmacro ^::ana/numeric int [x]
@@ -73,11 +73,11 @@ Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2080/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:481-482](https://github.com/clojure/clojurescript/blob/r2080/src/clj/cljs/core.clj#L481-L482)</ins>
+            └── <ins>[core.clj:484-485](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/core.clj#L484-L485)</ins>
 </pre>
 -->
 
@@ -118,7 +118,6 @@ The API data for this symbol:
 
 ```clj
 {:description "Coerces `x` to an integer by stripping decimal places.",
- :return-type number,
  :ns "cljs.core",
  :name "int",
  :signature ["[x]"],
@@ -126,18 +125,18 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/char" "cljs.core/integer?"],
  :full-name-encode "cljs.core_int",
- :source {:code "(defn ^number int\n  [x]\n  (bit-or x 0))",
+ :source {:code "(defn int\n  [x]\n  (bit-or x 0))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1622 1625]},
+          :lines [1620 1623]},
  :extra-sources [{:code "(defmacro ^::ana/numeric int [x]\n  `(bit-or ~x 0))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r2080",
+                  :tag "r2120",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [481 482]}],
+                  :lines [484 485]}],
  :full-name "cljs.core/int",
  :clj-symbol "clojure.core/int",
  :docstring "Coerce to int by stripping decimal places."}
