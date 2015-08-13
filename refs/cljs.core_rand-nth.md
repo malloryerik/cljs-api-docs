@@ -42,7 +42,7 @@ collection.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L7177-L7182):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L7177-L7182):
 
 ```clj
 (defn rand-nth
@@ -54,11 +54,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2024/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7177-7182](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L7177-L7182)</ins>
+            └── <ins>[core.cljs:7177-7182](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L7177-L7182)</ins>
 </pre>
 
 -->
@@ -111,7 +111,7 @@ The API data for this symbol:
  :source {:code "(defn rand-nth\n  [coll]\n  (nth coll (rand-int (count coll))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7177 7182]},
  :full-name "cljs.core/rand-nth",
