@@ -51,7 +51,7 @@ string is not a valid unquoted property name.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/cljs/cljs/core.cljs#L392-L396):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L392-L396):
 
 ```clj
 (defn js-invoke
@@ -63,12 +63,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.48/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.48
+clojurescript @ r1.7.58
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:392-396](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/cljs/cljs/core.cljs#L392-L396)</ins>
+                └── <ins>[core.cljs:392-396](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L392-L396)</ins>
 </pre>
 
 -->
@@ -117,7 +117,7 @@ The API data for this symbol:
  :source {:code "(defn js-invoke\n  [obj s & args]\n  (.apply (aget obj s) obj (into-array args)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.48",
+          :tag "r1.7.58",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [392 396]},
  :examples [{:id "373cce",

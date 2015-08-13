@@ -31,7 +31,7 @@ else returns form.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/clojure/cljs/core.cljc#L2582-L2589):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/clojure/cljs/core.cljc#L2587-L2594):
 
 ```clj
 (core/defmacro macroexpand-1
@@ -46,12 +46,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.48/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.48
+clojurescript @ r1.7.58
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.cljc:2582-2589](https://github.com/clojure/clojurescript/blob/r1.7.48/src/main/clojure/cljs/core.cljc#L2582-L2589)</ins>
+                └── <ins>[core.cljc:2587-2594](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/clojure/cljs/core.cljc#L2587-L2594)</ins>
 </pre>
 
 -->
@@ -102,9 +102,9 @@ The API data for this symbol:
  :source {:code "(core/defmacro macroexpand-1\n  [quoted]\n  (core/assert (core/= (core/first quoted) 'quote)\n    \"Argument to macroexpand-1 must be quoted\")\n  (core/let [form (second quoted)]\n    `(quote ~(ana/macroexpand-1 &env form))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.48",
+          :tag "r1.7.58",
           :filename "src/main/clojure/cljs/core.cljc",
-          :lines [2582 2589]},
+          :lines [2587 2594]},
  :full-name "cljs.core/macroexpand-1",
  :clj-symbol "clojure.core/macroexpand-1",
  :docstring "If form represents a macro form, returns its expansion,\nelse returns form."}
