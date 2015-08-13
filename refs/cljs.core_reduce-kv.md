@@ -52,7 +52,7 @@ where the keys will be the ordinals.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1192-L1200):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1192-L1200):
 
 ```clj
 (defn reduce-kv
@@ -64,11 +64,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1513/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1192-1200](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1192-L1200)</ins>
+            └── <ins>[core.cljs:1192-1200](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1192-L1200)</ins>
 </pre>
 
 -->
@@ -121,7 +121,7 @@ The API data for this symbol:
  :source {:code "(defn reduce-kv\n  ([f init coll]\n     (-kv-reduce coll f init)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1192 1200]},
  :full-name "cljs.core/reduce-kv",
