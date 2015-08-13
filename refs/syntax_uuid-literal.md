@@ -20,7 +20,7 @@
 ---
 
 
-Creates a universally unique identifier (UUID), using the [cljs.core/UUID] type.
+Creates a universally unique identifier (UUID), using the [`UUID`](cljs.core_UUID.md) type.
 
 The format is `#uuid "8-4-4-4-12"`, where the numbers represent the number of hex digits.
 
@@ -68,6 +68,7 @@ Get as a string:
 
 
 
+
  @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
@@ -85,11 +86,9 @@ clojure @ clojure-1.4.0
             └── lang
                 └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
-
 -->
 
 ---
-
 
 
 
@@ -124,10 +123,10 @@ The API data for this symbol:
  :type "tagged literal",
  :related ["cljs.core/uuid" "cljs.core/random-uuid"],
  :full-name-encode "syntax_uuid-literal",
- :source {:repo "clojure",
-          :tag "clojure-1.4.0",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
+ :extra-sources ({:repo "clojure",
+                  :tag "clojure-1.4.0",
+                  :filename "src/jvm/clojure/lang/LispReader.java",
+                  :lines [nil]}),
  :usage ["#uuid \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""],
  :examples [{:id "12c0f0",
              :content "```clj\n#uuid \"00000000-0000-0000-0000-000000000000\"\n;;=> #uuid \"00000000-0000-0000-0000-000000000000\"\n\n#uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n;;=> #uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n\n#uuid \"asdf\"\n;; clojure.lang.ExceptionInfo: Invalid UUID string: asdf\n```\n\nGet as a string:\n\n```clj\n(def foo #uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\")\n(str foo)\n;;=> \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n```"}],
