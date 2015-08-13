@@ -43,7 +43,7 @@ number-of-colls arguments
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3065-L3081):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3071-L3087):
 
 ```clj
 (defn sequence
@@ -61,18 +61,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3065-3081](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3065-L3081)</ins>
+            └── <ins>[core.cljs:3071-3087](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3071-L3087)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L1488-L1494):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L1494-L1500):
 
 ```clj
 (defn ^seq sequence
@@ -86,11 +86,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1488-1494](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L1488-L1494)</ins>
+            └── <ins>[core.cljs:1494-1500](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L1494-L1500)</ins>
 </pre>
 -->
 
@@ -139,15 +139,15 @@ The API data for this symbol:
  :source {:code "(defn sequence\n  ([coll]\n     (if (seq? coll)\n       coll\n       (or (seq coll) ())))\n  ([xform coll]\n     (.create LazyTransformer xform coll))\n  ([xform coll & colls]\n     (.createMulti LazyTransformer xform (to-array (cons coll colls)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3065 3081]},
+          :lines [3071 3087]},
  :extra-sources ({:code "(defn ^seq sequence\n  [coll]\n   (if (seq? coll)\n     coll\n     (or (seq coll) ())))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2301",
+                  :tag "r2307",
                   :filename "src/cljs/cljs/core.cljs",
-                  :lines [1488 1494]}),
+                  :lines [1494 1500]}),
  :full-name "cljs.core/sequence",
  :clj-symbol "clojure.core/sequence",
  :docstring "Coerces coll to a (possibly empty) sequence, if it is not already\none. Will not force a lazy seq. (sequence nil) yields (), When a\ntransducer is supplied, returns a lazy sequence of applications of\nthe transform to the items in coll(s), i.e. to the set of first\nitems of each coll, followed by the set of second\nitems in each coll, until any one of the colls is exhausted.  Any\nremaining items in other colls are ignored. The transform should accept\nnumber-of-colls arguments"}

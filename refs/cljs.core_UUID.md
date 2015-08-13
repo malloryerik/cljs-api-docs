@@ -36,7 +36,7 @@ Use [cljs.core/uuid] or [`#uuid literal`](syntax_uuid-literal.md) to create one.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L8700-L8716):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L8700-L8716):
 
 ```clj
 (deftype UUID [uuid]
@@ -62,11 +62,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8700-8716](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L8700-L8716)</ins>
+            └── <ins>[core.cljs:8700-8716](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L8700-L8716)</ins>
 </pre>
 
 -->
@@ -118,7 +118,7 @@ The API data for this symbol:
  :source {:code "(deftype UUID [uuid]\n  Object\n  (toString [_] uuid)\n  (equiv [this other]\n    (-equiv this other))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (goog.string/hashCode (pr-str this))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8700 8716]},
  :full-name "cljs.core/UUID"}

@@ -50,7 +50,7 @@ and end to infinity.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7480-L7487):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L7480-L7487):
 
 ```clj
 (defn range
@@ -64,11 +64,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2301/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7480-7487](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7480-L7487)</ins>
+            └── <ins>[core.cljs:7480-7487](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L7480-L7487)</ins>
 </pre>
 
 -->
@@ -121,7 +121,7 @@ The API data for this symbol:
  :source {:code "(defn range\n  ([] (range 0 (.-MAX-VALUE js/Number) 1))\n  ([end] (range 0 end 1))\n  ([start end] (range start end 1))\n  ([start end step] (Range. nil start end step nil)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7480 7487]},
  :full-name "cljs.core/range",
