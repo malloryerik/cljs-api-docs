@@ -40,7 +40,7 @@ Returns true if x is nil, false otherwise.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L214-L217):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L214-L217):
 
 ```clj
 (defn nil?
@@ -52,17 +52,37 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r971/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:214-217](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L214-L217)</ins>
+            └── <ins>[core.cljs:214-217](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L214-L217)</ins>
 </pre>
 
 -->
 
 ---
 
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L45-L46):
+
+```clj
+(defmacro nil? [x]
+  `(identical? ~x nil))
+```
+
+<!--
+Repo - tag - source tree - lines:
+
+ <pre>
+clojurescript @ r993
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:45-46](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L45-L46)</ins>
+</pre>
+-->
+
+---
 
 
 ###### External doc links:
@@ -107,11 +127,17 @@ The API data for this symbol:
  :related ["cljs.core/true?" "cljs.core/false?" "cljs.core/identity"],
  :full-name-encode "cljs.core_nilQMARK",
  :source {:code "(defn nil?\n  [x]\n  (identical? x nil))",
-          :title "Source code",
+          :title "Function code",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
           :lines [214 217]},
+ :extra-sources [{:code "(defmacro nil? [x]\n  `(identical? ~x nil))",
+                  :title "Macro code",
+                  :repo "clojurescript",
+                  :tag "r993",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [45 46]}],
  :full-name "cljs.core/nil?",
  :clj-symbol "clojure.core/nil?",
  :docstring "Returns true if x is nil, false otherwise."}
