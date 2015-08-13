@@ -38,7 +38,7 @@ Returns a random integer between 0 (inclusive) and n (exclusive).
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L7421-L7423):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L7421-L7423):
 
 ```clj
 (defn rand-int
@@ -49,18 +49,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2197/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2197
+clojurescript @ r2199
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7421-7423](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L7421-L7423)</ins>
+            └── <ins>[core.cljs:7421-7423](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L7421-L7423)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1708-L1710):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L1708-L1710):
 
 ```clj
 (defn rand-int
@@ -71,11 +71,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2197/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2197
+clojurescript @ r2199
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1708-1710](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1708-L1710)</ins>
+            └── <ins>[core.cljs:1708-1710](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L1708-L1710)</ins>
 </pre>
 -->
 
@@ -126,13 +126,13 @@ The API data for this symbol:
  :source {:code "(defn rand-int\n  [n] (Math/floor (* (Math/random) n)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2197",
+          :tag "r2199",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7421 7423]},
  :extra-sources ({:code "(defn rand-int\n  [n] (fix (rand n)))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2197",
+                  :tag "r2199",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [1708 1710]}),
  :full-name "cljs.core/rand-int",
