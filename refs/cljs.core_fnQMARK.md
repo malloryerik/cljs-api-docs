@@ -33,7 +33,7 @@ Returns true if `f` is a function, false otherwise.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L644-L645):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L684-L685):
 
 ```clj
 (defn fn? [f]
@@ -44,11 +44,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r927/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:644-645](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L644-L645)</ins>
+            └── <ins>[core.cljs:684-685](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L684-L685)</ins>
 </pre>
 
 -->
@@ -101,9 +101,9 @@ The API data for this symbol:
  :source {:code "(defn fn? [f]\n  (goog/isFunction f))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [644 645]},
+          :lines [684 685]},
  :full-name "cljs.core/fn?",
  :clj-symbol "clojure.core/fn?"}
 
