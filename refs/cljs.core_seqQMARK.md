@@ -46,7 +46,7 @@ Return true if s satisfies ISeq
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L1845-L1850):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L1855-L1860):
 
 ```clj
 (defn ^boolean seq?
@@ -60,11 +60,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3211/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:1845-1850](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L1845-L1850)</ins>
+            └── cljs
+                └── <ins>[core.cljs:1855-1860](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L1855-L1860)</ins>
 </pre>
 
 -->
@@ -124,9 +125,9 @@ The API data for this symbol:
  :source {:code "(defn ^boolean seq?\n  [s]\n  (if (nil? s)\n    false\n    (satisfies? ISeq s)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [1845 1850]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [1855 1860]},
  :full-name "cljs.core/seq?",
  :clj-symbol "clojure.core/seq?",
  :docstring "Return true if s satisfies ISeq"}

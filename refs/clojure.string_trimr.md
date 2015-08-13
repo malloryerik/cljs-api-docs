@@ -33,7 +33,7 @@ Removes whitespace from the right side of string.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/clojure/string.cljs#L157-L160):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/string.cljs#L157-L160):
 
 ```clj
 (defn trimr
@@ -45,11 +45,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3211/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
-        └── clojure
-            └── <ins>[string.cljs:157-160](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/clojure/string.cljs#L157-L160)</ins>
+    └── main
+        └── cljs
+            └── clojure
+                └── <ins>[string.cljs:157-160](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/string.cljs#L157-L160)</ins>
 </pre>
 
 -->
@@ -101,8 +102,8 @@ The API data for this symbol:
  :source {:code "(defn trimr\n    [s]\n    (gstring/trimRight s))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/clojure/string.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/clojure/string.cljs",
           :lines [157 160]},
  :full-name "clojure.string/trimr",
  :clj-symbol "clojure.string/trimr",
