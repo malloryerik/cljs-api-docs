@@ -43,7 +43,7 @@ number-of-colls arguments
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L3217-L3233):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L3217-L3233):
 
 ```clj
 (defn sequence
@@ -61,18 +61,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3217-3233](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L3217-L3233)</ins>
+            └── <ins>[core.cljs:3217-3233](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L3217-L3233)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L1590-L1596):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1590-L1596):
 
 ```clj
 (defn ^seq sequence
@@ -86,11 +86,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2505/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1590-1596](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L1590-L1596)</ins>
+            └── <ins>[core.cljs:1590-1596](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1590-L1596)</ins>
 </pre>
 -->
 
@@ -139,13 +139,13 @@ The API data for this symbol:
  :source {:code "(defn sequence\n  ([coll]\n     (if (seq? coll)\n       coll\n       (or (seq coll) ())))\n  ([xform coll]\n     (.create LazyTransformer xform coll))\n  ([xform coll & colls]\n     (.createMulti LazyTransformer xform (to-array (cons coll colls)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2505",
+          :tag "r2511",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3217 3233]},
  :extra-sources ({:code "(defn ^seq sequence\n  [coll]\n   (if (seq? coll)\n     coll\n     (or (seq coll) ())))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2505",
+                  :tag "r2511",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [1590 1596]}),
  :full-name "cljs.core/sequence",
