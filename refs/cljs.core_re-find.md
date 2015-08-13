@@ -39,7 +39,7 @@ capturing groups.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L6548-L6558):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6548-L6558):
 
 ```clj
 (defn re-find
@@ -55,11 +55,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1909/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6548-6558](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L6548-L6558)</ins>
+            └── <ins>[core.cljs:6548-6558](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6548-L6558)</ins>
 </pre>
 
 -->
@@ -111,7 +111,7 @@ The API data for this symbol:
  :source {:code "(defn re-find\n  [re s]\n  (let [matches (.exec re s)]\n    (when-not (nil? matches)\n      (if (== (count matches) 1)\n        (first matches)\n        (vec matches)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6548 6558]},
  :full-name "cljs.core/re-find",
