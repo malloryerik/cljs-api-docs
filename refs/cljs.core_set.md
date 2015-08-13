@@ -52,7 +52,7 @@ Returns a set of the distinct elements of coll.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L6119-L6122):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6158-L6161):
 
 ```clj
 (defn set
@@ -64,11 +64,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1847/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1847
+clojurescript @ r1853
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6119-6122](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L6119-L6122)</ins>
+            └── <ins>[core.cljs:6158-6161](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6158-L6161)</ins>
 </pre>
 
 -->
@@ -135,9 +135,9 @@ The API data for this symbol:
  :source {:code "(defn set\n  [coll]\n  (apply hash-set coll))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1847",
+          :tag "r1853",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6119 6122]},
+          :lines [6158 6161]},
  :full-name "cljs.core/set",
  :clj-symbol "clojure.core/set",
  :docstring "Returns a set of the distinct elements of coll."}

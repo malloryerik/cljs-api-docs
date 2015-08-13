@@ -69,22 +69,50 @@ Get as a string:
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L):
+Reader code @ [github](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L9-L16):
 
 ```clj
-
+(defn read-uuid
+  [form]
+  (assert (string? form) "UUID literal expects a string as its representation.")
+  (try
+    (let [uuid (java.util.UUID/fromString form)]
+      (list (symbol "UUID.") form))
+    (catch Throwable e
+      (throw (RuntimeException. (.getMessage e))))))
 ```
 
 <!--
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.5.1
+clojurescript @ r1853
 └── src
-    └── jvm
-        └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
+    └── clj
+        └── cljs
+            └── <ins>[tagged_literals.clj:9-16](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L9-L16)</ins>
+</pre>
+-->
+
+---
+Reader table @ [github](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L27-L30):
+
+```clj
+(def ^:dynamic *cljs-data-readers*
+  {'queue read-queue
+   'uuid  read-uuid
+   'inst  read-inst})
+```
+
+<!--
+Repo - tag - source tree - lines:
+
+ <pre>
+clojurescript @ r1853
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[tagged_literals.clj:27-30](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L27-L30)</ins>
 </pre>
 -->
 
@@ -123,10 +151,18 @@ The API data for this symbol:
  :type "tagged literal",
  :related ["cljs.core/uuid" "cljs.core/random-uuid"],
  :full-name-encode "syntax_uuid-literal",
- :extra-sources ({:repo "clojure",
-                  :tag "clojure-1.5.1",
-                  :filename "src/jvm/clojure/lang/LispReader.java",
-                  :lines [nil]}),
+ :extra-sources ({:code "(defn read-uuid\n  [form]\n  (assert (string? form) \"UUID literal expects a string as its representation.\")\n  (try\n    (let [uuid (java.util.UUID/fromString form)]\n      (list (symbol \"UUID.\") form))\n    (catch Throwable e\n      (throw (RuntimeException. (.getMessage e))))))",
+                  :title "Reader code",
+                  :repo "clojurescript",
+                  :tag "r1853",
+                  :filename "src/clj/cljs/tagged_literals.clj",
+                  :lines [9 16]}
+                 {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst})",
+                  :title "Reader table",
+                  :repo "clojurescript",
+                  :tag "r1853",
+                  :filename "src/clj/cljs/tagged_literals.clj",
+                  :lines [27 30]}),
  :usage ["#uuid \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""],
  :examples [{:id "12c0f0",
              :content "```clj\n#uuid \"00000000-0000-0000-0000-000000000000\"\n;;=> #uuid \"00000000-0000-0000-0000-000000000000\"\n\n#uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n;;=> #uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n\n#uuid \"asdf\"\n;; clojure.lang.ExceptionInfo: Invalid UUID string: asdf\n```\n\nGet as a string:\n\n```clj\n(def foo #uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\")\n(str foo)\n;;=> \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n```"}],
