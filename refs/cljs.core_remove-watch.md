@@ -63,7 +63,7 @@ Removes a watch (set by add-watch) from a reference
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8833-L8839):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8833-L8839):
 
 ```clj
 (defn remove-watch
@@ -76,12 +76,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3264/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8833-8839](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8833-L8839)</ins>
+                └── <ins>[core.cljs:8833-8839](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8833-L8839)</ins>
 </pre>
 
 -->
@@ -134,7 +134,7 @@ The API data for this symbol:
  :source {:code "(defn remove-watch\n  [iref key]\n  (-remove-watch iref key)\n  iref)",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8833 8839]},
  :examples [{:id "70044a",
