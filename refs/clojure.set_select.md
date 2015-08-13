@@ -38,7 +38,7 @@ Returns a set of the elements for which pred is true
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/clojure/set.cljs#L61-L65):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/clojure/set.cljs#L61-L65):
 
 ```clj
 (defn select
@@ -51,12 +51,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.58
+clojurescript @ r1.7.107
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[set.cljs:61-65](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/clojure/set.cljs#L61-L65)</ins>
+                └── <ins>[set.cljs:61-65](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/clojure/set.cljs#L61-L65)</ins>
 </pre>
 
 -->
@@ -109,7 +109,7 @@ The API data for this symbol:
  :source {:code "(defn select\n  [pred xset]\n    (reduce (fn [s k] (if (pred k) s (disj s k)))\n            xset xset))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.58",
+          :tag "r1.7.107",
           :filename "src/main/cljs/clojure/set.cljs",
           :lines [61 65]},
  :full-name "clojure.set/select",

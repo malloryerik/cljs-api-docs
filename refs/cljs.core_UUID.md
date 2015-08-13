@@ -36,7 +36,7 @@ Use [`uuid`](cljs.core_uuid.md) or [`#uuid literal`](syntax_uuid-literal.md) to 
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L9808-L9830):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/cljs/core.cljs#L9819-L9841):
 
 ```clj
 (deftype UUID [uuid ^:mutable __hash]
@@ -56,7 +56,7 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src
   IHash
   (-hash [this]
     (when (nil? __hash)
-      (set! __hash (goog.string/hashCode uuid)))
+      (set! __hash (hash-string* uuid)))
     __hash)
 
   IComparable
@@ -68,12 +68,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.58
+clojurescript @ r1.7.107
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9808-9830](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L9808-L9830)</ins>
+                └── <ins>[core.cljs:9819-9841](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/cljs/core.cljs#L9819-L9841)</ins>
 </pre>
 
 -->
@@ -122,12 +122,12 @@ The API data for this symbol:
            "cljs.core/random-uuid"
            "cljs.core/uuid"],
  :full-name-encode "cljs.core_UUID",
- :source {:code "(deftype UUID [uuid ^:mutable __hash]\n  Object\n  (toString [_] uuid)\n  (equiv [this other]\n    (-equiv this other))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (when (nil? __hash)\n      (set! __hash (goog.string/hashCode uuid)))\n    __hash)\n\n  IComparable\n  (-compare [_ other]\n    (garray/defaultCompare uuid (.-uuid other))))",
+ :source {:code "(deftype UUID [uuid ^:mutable __hash]\n  Object\n  (toString [_] uuid)\n  (equiv [this other]\n    (-equiv this other))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (when (nil? __hash)\n      (set! __hash (hash-string* uuid)))\n    __hash)\n\n  IComparable\n  (-compare [_ other]\n    (garray/defaultCompare uuid (.-uuid other))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.58",
+          :tag "r1.7.107",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9808 9830]},
+          :lines [9819 9841]},
  :full-name "cljs.core/UUID"}
 
 ```

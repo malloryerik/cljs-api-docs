@@ -53,7 +53,7 @@ Coerce to boolean
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L1983-L1989):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/cljs/core.cljs#L1989-L1995):
 
 ```clj
 (defn ^boolean boolean
@@ -68,12 +68,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1.7.58/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1.7.58
+clojurescript @ r1.7.107
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1983-1989](https://github.com/clojure/clojurescript/blob/r1.7.58/src/main/cljs/cljs/core.cljs#L1983-L1989)</ins>
+                └── <ins>[core.cljs:1989-1995](https://github.com/clojure/clojurescript/blob/r1.7.107/src/main/cljs/cljs/core.cljs#L1989-L1995)</ins>
 </pre>
 
 -->
@@ -127,9 +127,9 @@ The API data for this symbol:
  :source {:code "(defn ^boolean boolean\n  [x]\n  (cond\n    (nil? x) false\n    (false? x) false\n    :else true))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1.7.58",
+          :tag "r1.7.107",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1983 1989]},
+          :lines [1989 1995]},
  :examples [{:id "9edf3a",
              :content "```clj\n(boolean 1)\n;;=> true\n\n(boolean 0)\n;;=> true\n\n(boolean nil)\n;;=> false\n```"}],
  :full-name "cljs.core/boolean",
