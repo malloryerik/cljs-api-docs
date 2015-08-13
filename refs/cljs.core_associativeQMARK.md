@@ -52,7 +52,7 @@ Returns true if coll implements Associative
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1138-L1140):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1138-L1140):
 
 ```clj
 (defn ^boolean associative?
@@ -63,11 +63,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2156/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1138-1140](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1138-L1140)</ins>
+            └── <ins>[core.cljs:1138-1140](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1138-L1140)</ins>
 </pre>
 
 -->
@@ -120,7 +120,7 @@ The API data for this symbol:
  :source {:code "(defn ^boolean associative?\n  [x] (satisfies? IAssociative x))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1138 1140]},
  :examples [{:id "29a37f",
