@@ -18,7 +18,7 @@
 ---
 
 
-`#'foo` is sugar for [`(var foo)`](special/var).
+`#'foo` is sugar for [`(var foo)`](special_var.md).
 
 Accesses the var attached to the given symbol.
 
@@ -38,7 +38,7 @@ Access the metadata of a var:
 
 ###### See Also:
 
-[``](special_var.md)<br>
+[`var`](special_var.md)<br>
 
 ---
 

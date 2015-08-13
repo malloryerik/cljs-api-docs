@@ -45,7 +45,7 @@ n (default 1) (exclusive).
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L8547-L8551):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L8615-L8619):
 
 ```clj
 (defn rand
@@ -57,18 +57,18 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2411/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8547-8551](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L8547-L8551)</ins>
+            └── <ins>[core.cljs:8615-8619](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L8615-L8619)</ins>
 </pre>
 
 -->
 
 ---
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L2017-L2020):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L2026-L2029):
 
 ```clj
 (defn ^number rand
@@ -80,11 +80,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2411/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2017-2020](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L2017-L2020)</ins>
+            └── <ins>[core.cljs:2026-2029](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L2026-L2029)</ins>
 </pre>
 -->
 
@@ -135,15 +135,15 @@ The API data for this symbol:
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8547 8551]},
+          :lines [8615 8619]},
  :extra-sources ({:code "(defn ^number rand\n  ([]  (Math/random))\n  ([n] (* n (rand))))",
                   :title "Source code",
                   :repo "clojurescript",
-                  :tag "r2411",
+                  :tag "r2496",
                   :filename "src/cljs/cljs/core.cljs",
-                  :lines [2017 2020]}),
+                  :lines [2026 2029]}),
  :full-name "cljs.core/rand",
  :clj-symbol "clojure.core/rand",
  :docstring "Returns a random floating point number between 0 (inclusive) and\nn (default 1) (exclusive)."}
