@@ -72,7 +72,7 @@ Returns true if x satisfies ICollection
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1094-L1099):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1094-L1099):
 
 ```clj
 (defn ^boolean coll?
@@ -86,11 +86,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1877/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1094-1099](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1094-L1099)</ins>
+            └── <ins>[core.cljs:1094-1099](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1094-L1099)</ins>
 </pre>
 
 -->
@@ -144,7 +144,7 @@ The API data for this symbol:
  :source {:code "(defn ^boolean coll?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ICollection x)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1094 1099]},
  :examples [{:id "d30884",
