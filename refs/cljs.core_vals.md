@@ -38,7 +38,7 @@ Returns a sequence of the map's values.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L7302-L7306):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L7302-L7306):
 
 ```clj
 (defn vals
@@ -51,11 +51,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2911/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7302-7306](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L7302-L7306)</ins>
+            └── <ins>[core.cljs:7302-7306](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L7302-L7306)</ins>
 </pre>
 
 -->
@@ -108,7 +108,7 @@ The API data for this symbol:
  :source {:code "(defn vals\n  [hash-map]\n  (when-let [mseq (seq hash-map)]\n    (ValSeq. mseq nil)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7302 7306]},
  :full-name "cljs.core/vals",
