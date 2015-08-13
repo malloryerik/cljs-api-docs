@@ -11,14 +11,14 @@
 
 
  <samp>
-(__UUID.__ uuid)<br>
+(__UUID.__ uuid __hash)<br>
 </samp>
 
 ---
 
 A type representing a universally unique identifier ([UUID]).
 
-Use [cljs.core/uuid] or [`#uuid literal`](syntax_uuid-literal.md) to create one.
+Use [`uuid`](cljs.core_uuid.md) or [`#uuid literal`](syntax_uuid-literal.md) to create one.
 
 [UUID]:https://en.wikipedia.org/wiki/Universally_unique_identifier
 
@@ -29,17 +29,17 @@ Use [cljs.core/uuid] or [`#uuid literal`](syntax_uuid-literal.md) to create one.
 
 [`#uuid literal`](syntax_uuid-literal.md)<br>
 [``](cljs.core_random-uuid.md)<br>
-[``](cljs.core_uuid.md)<br>
+[`cljs.core/uuid`](cljs.core_uuid.md)<br>
 
 ---
 
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L9504-L9524):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9505-L9527):
 
 ```clj
-(deftype UUID [uuid]
+(deftype UUID [uuid ^:mutable __hash]
   Object
   (toString [_] uuid)
   (equiv [this other]
@@ -55,7 +55,9 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/m
 
   IHash
   (-hash [this]
-    (goog.string/hashCode (pr-str this)))
+    (when (nil? __hash)
+      (set! __hash (goog.string/hashCode uuid)))
+    __hash)
 
   IComparable
   (-compare [_ other]
@@ -66,12 +68,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9504-9524](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L9504-L9524)</ins>
+                └── <ins>[core.cljs:9505-9527](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9505-L9527)</ins>
 </pre>
 
 -->
@@ -113,19 +115,19 @@ The API data for this symbol:
 {:description "A type representing a universally unique identifier ([UUID]).\n\nUse [cljs.core/uuid] or [syntax/uuid-literal] to create one.\n\n[UUID]:https://en.wikipedia.org/wiki/Universally_unique_identifier",
  :ns "cljs.core",
  :name "UUID",
- :signature ["[uuid]"],
+ :signature ["[uuid __hash]"],
  :history [["+" "0.0-1424"]],
  :type "type",
  :related ["syntax/uuid-literal"
            "cljs.core/random-uuid"
            "cljs.core/uuid"],
  :full-name-encode "cljs.core_UUID",
- :source {:code "(deftype UUID [uuid]\n  Object\n  (toString [_] uuid)\n  (equiv [this other]\n    (-equiv this other))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (goog.string/hashCode (pr-str this)))\n\n  IComparable\n  (-compare [_ other]\n    (garray/defaultCompare uuid (.-uuid other))))",
+ :source {:code "(deftype UUID [uuid ^:mutable __hash]\n  Object\n  (toString [_] uuid)\n  (equiv [this other]\n    (-equiv this other))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (when (nil? __hash)\n      (set! __hash (goog.string/hashCode uuid)))\n    __hash)\n\n  IComparable\n  (-compare [_ other]\n    (garray/defaultCompare uuid (.-uuid other))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9504 9524]},
+          :lines [9505 9527]},
  :full-name "cljs.core/UUID"}
 
 ```

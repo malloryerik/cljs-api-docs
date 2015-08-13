@@ -32,7 +32,7 @@ macroexpand-1 nor macroexpand expand macros in subforms.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/core.clj#L2045-L2057):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L2046-L2058):
 
 ```clj
 (defmacro macroexpand
@@ -51,12 +51,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3269/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:2045-2057](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/core.clj#L2045-L2057)</ins>
+                └── <ins>[core.clj:2046-2058](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L2046-L2058)</ins>
 </pre>
 
 -->
@@ -107,9 +107,9 @@ The API data for this symbol:
  :source {:code "(defmacro macroexpand\n  [quoted]\n  (core/assert (core/= (core/first quoted) 'quote)\n    \"Argument to macroexpand must be quoted\")\n  (core/let [form (second quoted)\n             env &env]\n    (core/loop [form form form' (ana/macroexpand-1 env form)]\n      (core/if-not (core/identical? form form')\n        (recur form' (ana/macroexpand-1 env form'))\n        `(quote ~form')))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/core.clj",
-          :lines [2045 2057]},
+          :lines [2046 2058]},
  :full-name "cljs.core/macroexpand",
  :clj-symbol "clojure.core/macroexpand",
  :docstring "Repeatedly calls macroexpand-1 on form until it no longer\nrepresents a macro form, then returns it.  Note neither\nmacroexpand-1 nor macroexpand expand macros in subforms."}
