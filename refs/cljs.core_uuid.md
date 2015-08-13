@@ -47,7 +47,7 @@ No validation is performed:
 
 ###### See Also:
 
-[``](cljs.core_random-uuid.md)<br>
+[`cljs.core/random-uuid`](cljs.core_random-uuid.md)<br>
 [`#uuid literal`](syntax_uuid-literal.md)<br>
 
 ---
@@ -55,7 +55,7 @@ No validation is performed:
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9534-L9535):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L9553-L9554):
 
 ```clj
 (defn uuid [s]
@@ -66,12 +66,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3297/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9534-9535](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9534-L9535)</ins>
+                └── <ins>[core.cljs:9553-9554](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L9553-L9554)</ins>
 </pre>
 
 -->
@@ -121,9 +121,9 @@ The API data for this symbol:
  :source {:code "(defn uuid [s]\n  (UUID. s nil))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9534 9535]},
+          :lines [9553 9554]},
  :examples [{:id "d6491d",
              :content "```clj\n(uuid \"00000000-0000-0000-0000-000000000000\")\n;;=> #uuid \"00000000-0000-0000-0000-000000000000\"\n\n(uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\")\n;;=> #uuid \"97bda55b-6175-4c39-9e04-7c0205c709dc\"\n```\n\nNo validation is performed:\n\n```clj\n(uuid \"\")\n;;=> #uuid \"\"\n```"}],
  :full-name "cljs.core/uuid"}

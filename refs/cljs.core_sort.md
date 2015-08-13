@@ -47,7 +47,7 @@ Comp defaults to compare.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1978-L1990):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1985-L1997):
 
 ```clj
 (defn sort
@@ -66,12 +66,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3297/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1978-1990](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1978-L1990)</ins>
+                └── <ins>[core.cljs:1985-1997](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1985-L1997)</ins>
 </pre>
 
 -->
@@ -124,9 +124,9 @@ The API data for this symbol:
  :source {:code "(defn sort\n  ([coll]\n   (sort compare coll))\n  ([comp coll]\n   (if (seq coll)\n     (let [a (to-array coll)]\n       ;; matching Clojure's stable sort, though docs don't promise it\n       (garray/stableSort a (fn->comparator comp))\n       (seq a))\n     ())))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1978 1990]},
+          :lines [1985 1997]},
  :full-name "cljs.core/sort",
  :clj-symbol "clojure.core/sort",
  :docstring "Returns a sorted sequence of the items in coll. Comp can be\nboolean-valued comparison function, or a -/0/+ valued comparator.\nComp defaults to compare."}
