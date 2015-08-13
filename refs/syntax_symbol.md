@@ -84,7 +84,7 @@ To signify an unevaluated symbol, precede it with a quote:
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -94,12 +94,12 @@ To signify an unevaluated symbol, precede it with a quote:
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 -->
@@ -141,7 +141,7 @@ The API data for this symbol:
  :related ["cljs.core/symbol" "cljs.core/symbol?"],
  :full-name-encode "syntax_symbol",
  :source {:repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :usage ["foo" "foo/bar"],

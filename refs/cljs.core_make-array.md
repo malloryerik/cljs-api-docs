@@ -34,7 +34,7 @@ Creates an empty JavaScript array of size `size`.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L96-L100):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L115-L119):
 
 ```clj
 (defn make-array
@@ -48,17 +48,38 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r1586/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:96-100](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L96-L100)</ins>
+            └── <ins>[core.cljs:115-119](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L115-L119)</ins>
 </pre>
 
 -->
 
 ---
 
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L1159-L1161):
+
+```clj
+(defmacro make-array
+  [size]
+  `(js/Array. ~size))
+```
+
+<!--
+Repo - tag - source tree - lines:
+
+ <pre>
+clojurescript @ r1798
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:1159-1161](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L1159-L1161)</ins>
+</pre>
+-->
+
+---
 
 
 ###### External doc links:
@@ -103,11 +124,17 @@ The API data for this symbol:
  :related ["cljs.core/aclone" "cljs.core/array"],
  :full-name-encode "cljs.core_make-array",
  :source {:code "(defn make-array\n  ([size]\n     (js/Array. size))\n  ([type size]\n     (make-array size)))",
-          :title "Source code",
+          :title "Function code",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [96 100]},
+          :lines [115 119]},
+ :extra-sources [{:code "(defmacro make-array\n  [size]\n  `(js/Array. ~size))",
+                  :title "Macro code",
+                  :repo "clojurescript",
+                  :tag "r1798",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [1159 1161]}],
  :full-name "cljs.core/make-array",
  :clj-symbol "clojure.core/make-array"}
 

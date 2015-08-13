@@ -69,7 +69,7 @@ Get as a string:
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -79,12 +79,12 @@ Get as a string:
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 -->
 
@@ -124,7 +124,7 @@ The API data for this symbol:
  :related ["cljs.core/uuid" "cljs.core/random-uuid"],
  :full-name-encode "syntax_uuid-literal",
  :extra-sources ({:repo "clojure",
-                  :tag "clojure-1.4.0",
+                  :tag "clojure-1.5.1",
                   :filename "src/jvm/clojure/lang/LispReader.java",
                   :lines [nil]}),
  :usage ["#uuid \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""],

@@ -51,7 +51,7 @@ Duplicate values will cause an error:
 
 
 
- @ [github](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L):
+ @ [github](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L):
 
 ```clj
 
@@ -61,12 +61,12 @@ Duplicate values will cause an error:
 Repo - tag - source tree - lines:
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 -->
@@ -110,7 +110,7 @@ The API data for this symbol:
            "cljs.core/sorted-set-by"],
  :full-name-encode "syntax_set",
  :source {:repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :usage ["#{...}"],

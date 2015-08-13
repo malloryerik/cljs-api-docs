@@ -33,28 +33,48 @@ Returns true if `o` is an instance of type `t`, false otherwise.
 
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L375-L376):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L447-L448):
 
 ```clj
 (defn ^boolean instance? [t o]
-  (js* "(~{o} instanceof ~{t})"))
+  (cljs.core/instance? t o))
 ```
 
 <!--
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:375-376](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L375-L376)</ins>
+            └── <ins>[core.cljs:447-448](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L447-L448)</ins>
 </pre>
 
 -->
 
 ---
 
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L245-L246):
+
+```clj
+(defmacro instance? [t o]
+  (bool-expr (list 'js* "(~{} instanceof ~{})" o t)))
+```
+
+<!--
+Repo - tag - source tree - lines:
+
+ <pre>
+clojurescript @ r1798
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:245-246](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L245-L246)</ins>
+</pre>
+-->
+
+---
 
 
 ###### External doc links:
@@ -99,12 +119,18 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/type"],
  :full-name-encode "cljs.core_instanceQMARK",
- :source {:code "(defn ^boolean instance? [t o]\n  (js* \"(~{o} instanceof ~{t})\"))",
-          :title "Source code",
+ :source {:code "(defn ^boolean instance? [t o]\n  (cljs.core/instance? t o))",
+          :title "Function code",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [375 376]},
+          :lines [447 448]},
+ :extra-sources [{:code "(defmacro instance? [t o]\n  (bool-expr (list 'js* \"(~{} instanceof ~{})\" o t)))",
+                  :title "Macro code",
+                  :repo "clojurescript",
+                  :tag "r1798",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [245 246]}],
  :full-name "cljs.core/instance?",
  :clj-symbol "clojure.core/instance?"}
 
