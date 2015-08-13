@@ -42,7 +42,7 @@ Duplicate values will cause an error:
 
 ###### See Also:
 
-[``](cljs.core_hash-set.md)<br>
+[`cljs.core/hash-set`](cljs.core_hash-set.md)<br>
 [`cljs.core/sorted-set`](cljs.core_sorted-set.md)<br>
 [`cljs.core/sorted-set-by`](cljs.core_sorted-set-by.md)<br>
 
