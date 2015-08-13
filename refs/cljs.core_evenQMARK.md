@@ -40,7 +40,7 @@ Returns true if n is even, throws an exception if n is not an integer
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L2840-L2844):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L2841-L2845):
 
 ```clj
 (defn ^boolean even?
@@ -53,11 +53,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2261/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2261
+clojurescript @ r2268
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2840-2844](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L2840-L2844)</ins>
+            └── <ins>[core.cljs:2841-2845](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L2841-L2845)</ins>
 </pre>
 
 -->
@@ -111,9 +111,9 @@ The API data for this symbol:
  :source {:code "(defn ^boolean even?\n   [n] (if (integer? n)\n        (zero? (bit-and n 1))\n        (throw (js/Error. (str \"Argument must be an integer: \" n)))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2261",
+          :tag "r2268",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2840 2844]},
+          :lines [2841 2845]},
  :full-name "cljs.core/even?",
  :clj-symbol "clojure.core/even?",
  :docstring "Returns true if n is even, throws an exception if n is not an integer"}

@@ -343,6 +343,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.core/EntriesIterator](refs/cljs.core_EntriesIterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_EntriesIterator.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.core/ExceptionInfo](refs/cljs.core_ExceptionInfo.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ExceptionInfo.cljsdoc)</td>
 <td></td>
@@ -749,6 +756,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.core/Iterator](refs/cljs.core_Iterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Iterator.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.core/KeySeq](refs/cljs.core_KeySeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_KeySeq.cljsdoc)</td>
 <td></td>
@@ -1045,6 +1059,13 @@ __Rows are removed when their columns are filled (done).__
 <tr>
 <td>[cljs.core/Set.EMPTY](refs/cljs.core_SetDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_SetDOTEMPTY.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[cljs.core/SetEntriesIterator](refs/cljs.core_SetEntriesIterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_SetEntriesIterator.cljsdoc)</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1568,6 +1589,13 @@ __Rows are removed when their columns are filled (done).__
 <td></td>
 </tr>
 <tr>
+<td>[cljs.core/entries-iterator](refs/cljs.core_entries-iterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_entries-iterator.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>[cljs.core/even?](refs/cljs.core_evenQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_evenQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
@@ -2014,6 +2042,13 @@ __Rows are removed when their columns are filled (done).__
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
+</tr>
+<tr>
+<td>[cljs.core/iterator](refs/cljs.core_iterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iterator.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>[cljs.core/juxt](refs/cljs.core_juxt.md)</td>
@@ -2952,6 +2987,13 @@ __Rows are removed when their columns are filled (done).__
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
+</tr>
+<tr>
+<td>[cljs.core/set-entries-iterator](refs/cljs.core_set-entries-iterator.md)</td>
+<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_set-entries-iterator.cljsdoc)</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>[cljs.core/set-from-indexed-seq](refs/cljs.core_set-from-indexed-seq.md)</td>
