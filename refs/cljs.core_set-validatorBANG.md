@@ -53,7 +53,7 @@ validator will not be changed.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L3880-L3888):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L3880-L3888):
 
 ```clj
 (defn set-validator!
@@ -65,12 +65,12 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r3263/src/m
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:3880-3888](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L3880-L3888)</ins>
+                └── <ins>[core.cljs:3880-3888](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L3880-L3888)</ins>
 </pre>
 
 -->
@@ -123,7 +123,7 @@ The API data for this symbol:
  :source {:code "(defn set-validator!\n  [iref val]\n  (set! (.-validator iref) val))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [3880 3888]},
  :full-name "cljs.core/set-validator!",
