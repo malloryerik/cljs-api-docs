@@ -64,10 +64,10 @@ else returns numerator divided by all of the denominators.
 ```
 
 
-Function code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1452-L1457):
+Function code @ [github](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1452-L1457):
 
 ```clj
-(defn /
+(defn ^number /
   ([x] (/ 1 x))
   ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//
   ([x y & more] (reduce / (/ x y) more)))
@@ -77,18 +77,18 @@ Function code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1452-1457](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1452-L1457)</ins>
+            └── <ins>[core.cljs:1452-1457](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1452-L1457)</ins>
 </pre>
 
 -->
 
 ---
 
-Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L400-L403):
+Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L400-L403):
 
 ```clj
 (defmacro ^::ana/numeric /
@@ -101,11 +101,11 @@ Macro code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/cl
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:400-403](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L400-L403)</ins>
+            └── <ins>[core.clj:400-403](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L400-L403)</ins>
 </pre>
 -->
 
@@ -146,6 +146,7 @@ The API data for this symbol:
 
 ```clj
 {:description "If no denominators are supplied, returns 1/numerator, else returns numerator\ndivided by all of the denominators.",
+ :return-type number,
  :ns "cljs.core",
  :name "/",
  :signature ["[x]" "[x y]" "[x y & more]"],
@@ -153,16 +154,16 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/*" "cljs.core/quot"],
  :full-name-encode "cljs.core_SLASH",
- :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
+ :source {:code "(defn ^number /\n  ([x] (/ 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
           :title "Function code",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1452 1457]},
  :extra-sources [{:code "(defmacro ^::ana/numeric /\n  ([x] `(/ 1 ~x))\n  ([x y] (core/list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
                   :title "Macro code",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [400 403]}],
  :examples [{:id "824bb7",

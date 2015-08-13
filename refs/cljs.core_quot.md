@@ -41,10 +41,10 @@ quot[ient] of dividing numerator by denominator.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1661-L1665):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1661-L1665):
 
 ```clj
-(defn quot
+(defn ^number quot
   [n d]
   (let [rem (js-mod n d)]
     (fix (/ (- n rem) d))))
@@ -54,11 +54,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2069/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1661-1665](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1661-L1665)</ins>
+            └── <ins>[core.cljs:1661-1665](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1661-L1665)</ins>
 </pre>
 
 -->
@@ -101,6 +101,7 @@ The API data for this symbol:
 
 ```clj
 {:description "Returns the quotient of dividing numerator `n` by denominator `d`.\n\nReturns `NaN` when `d` is 0 (divide by 0 error).",
+ :return-type number,
  :ns "cljs.core",
  :name "quot",
  :signature ["[n d]"],
@@ -108,10 +109,10 @@ The API data for this symbol:
  :type "function",
  :related ["cljs.core/rem" "cljs.core/mod"],
  :full-name-encode "cljs.core_quot",
- :source {:code "(defn quot\n  [n d]\n  (let [rem (js-mod n d)]\n    (fix (/ (- n rem) d))))",
+ :source {:code "(defn ^number quot\n  [n d]\n  (let [rem (js-mod n d)]\n    (fix (/ (- n rem) d))))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1661 1665]},
  :full-name "cljs.core/quot",
