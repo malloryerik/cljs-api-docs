@@ -39,7 +39,7 @@ Returns true if x is not nil, false otherwise.
 ```
 
 
-Source code @ [github](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L104-L106):
+Source code @ [github](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L104-L106):
 
 ```clj
 (defn ^boolean some?
@@ -50,11 +50,11 @@ Source code @ [github](https://github.com/clojure/clojurescript/blob/r2850/src/c
 Repo - tag - source tree - lines:
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:104-106](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L104-L106)</ins>
+            └── <ins>[core.cljs:104-106](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L104-L106)</ins>
 </pre>
 
 -->
@@ -108,7 +108,7 @@ The API data for this symbol:
  :source {:code "(defn ^boolean some?\n  [x] (not (nil? x)))",
           :title "Source code",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/core.cljs",
           :lines [104 106]},
  :full-name "cljs.core/some?",
