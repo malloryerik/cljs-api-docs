@@ -22,7 +22,7 @@ local `def`s that are only available within `let`'s scope.
 
 In addition to direct symbol binding, `let` supports a destructuring syntax to
 "break apart" collections into multiple symbols. This destructuring syntax is
-like it's own [mini-language] and allows for succinct code.
+like its own [mini-language] and allows for succinct code.
 
 `let` is a wrapper over one of ClojureScript's [special forms] and is a
 fundamental building block of the language. Many macros rely on `let`s binding
